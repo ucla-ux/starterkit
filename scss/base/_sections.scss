@@ -1,0 +1,15 @@
+// =====================================================
+//   Sections
+//   w3c.github.io/html/sections.html
+// ======================================================
+// body, header, nav, aside, footer, article, section
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
