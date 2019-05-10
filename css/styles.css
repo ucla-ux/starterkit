@@ -5,3 +5,16 @@ html {
 body {
   margin: 0;
 }
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: #2774ae;
+}
+
+.container {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 1em;
+  overflow: hidden;
+}
