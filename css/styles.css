@@ -19,6 +19,10 @@ h2 {
   margin: .33em 0;
 }
 
+h3 {
+ margin-top: 1.5em; 
+}
+
 ul {
   line-height: 1.5em; 
   list-style: none;
