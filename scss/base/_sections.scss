@@ -26,21 +26,23 @@ body {
 }
 
 header {
-  grid-column: 3 / -1;
+  grid-column: 2 / -1;
   grid-row: 1;
 }
 
 main {
   display: grid;
-  grid-column: 3 / 10;
+  grid-column: 2 / -1;
+  grid-gap: 2vw;
   grid-row: 2;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.category {
-  border: 1px solid var(--ucla-blue);
-  border-bottom: 3px solid var(--ucla-blue);
-  border-top: 3px solid var(--ucla-blue);
-  margin: var(--spacing);
-  padding: var(--spacing-large);
+.category h2 {
+  border-bottom: 1px solid var(--ucla-blue);
+  margin: var(--spacing) 0;
+}
+
+.category h3 {
+  font-style: italic;
 }
