@@ -1,0 +1,90 @@
+:root {
+
+  /* 2019 UCLA Color Palette SCSS */
+
+  /* Hex color space */
+  --ucla-gold: #ffd100;
+  --ucla-blue: #2774ae;
+  --ucla-lightest-blue: #daebfe;
+  --ucla-lighter-blue: #8bb8e8;
+  --ucla-darker-blue: #005587;
+  --ucla-darkest-blue: #003b5c;
+  --ucla-darker-gold: #ffc72c;
+  --ucla-darkest-gold: #ffb81c;
+  --ucla-cyan: #0ff;
+  --ucla-magenta: #ff00a5;
+  --ucla-green: #00ff87;
+  --ucla-janss-steps-green: #32aa56;
+  --ucla-yellow: #ff0;
+  --ucla-purple: #8a69d4;
+
+  --ucla-black: #000;
+  --ucla-black-90: #1a1a1a;
+  --ucla-black-80: #333;
+  --ucla-black-70: #4d4d4d;
+  --ucla-black-60: #666;
+  --ucla-black-50: #808080;
+  --ucla-black-40: #999;
+  --ucla-black-30: #b3b3b3;
+  --ucla-black-20: #ccc;
+  --ucla-black-10: #e6e6e6;
+  --ucla-white: #fff;
+
+  /* hsl color space */
+  --ucla-gold: hsl(49, 100%, 50%);
+  --ucla-blue: hsl(206, 63%, 42%);
+  --ucla-lightest-blue: hsl(212, 95%, 93%);
+  --ucla-lighter-blue: hsl(211, 67%, 73%);
+  --ucla-darker-blue: hsl(202, 100%, 26%);
+  --ucla-darkest-blue: hsl(202, 100%, 18%);
+  --ucla-darker-gold: hsl(44, 100%, 59%);
+  --ucla-darkest-gold: hsl(41, 100%, 55%);
+  --ucla-cyan: hsl(180, 100%, 50%);
+  --ucla-magenta: hsl(321, 100%, 50%);
+  --ucla-green: hsl(152, 100%, 50%);
+  --ucla-janss-steps-green: hsl(138, 55%, 43%);
+  --ucla-yellow: hsl(60, 100%, 50%);
+  --ucla-purple: hsl(259, 55%, 62%);
+
+  --ucla-black: hsl(0, 0%, 0%);
+  --ucla-black-90: hsl(0, 0%, 10%);
+  --ucla-black-80: hsl(0, 0%, 20%);
+  --ucla-black-70: hsl(0, 0%, 30%);
+  --ucla-black-60: hsl(0, 0%, 40%);
+  --ucla-black-50: hsl(0, 0%, 50%);
+  --ucla-black-40: hsl(0, 0%, 60%);
+  --ucla-black-30: hsl(0, 0%, 70%);
+  --ucla-black-20: hsl(0, 0%, 80%);
+  --ucla-black-10: hsl(0, 0%, 90%);
+  --ucla-white: hsl(0, 0%, 100%);
+
+  /* RGB color space */
+
+  --ucla-gold: rgb(255, 209, 0);
+  --ucla-blue: rgb(39, 116, 174);
+  --ucla-lightest-blue: rgb(218, 235, 254);
+  --ucla-lighter-blue: rgb(139, 184, 232);
+  --ucla-darker-blue: rgb(0, 85, 135);
+  --ucla-darkest-blue: rgb(0, 59, 92);
+  --ucla-darker-gold: rgb(255, 199, 44);
+  --ucla-darkest-gold: rgb(255, 184, 28);
+  --ucla-cyan: rgb(0, 255, 255);
+  --ucla-magenta: rgb(255, 0, 165);
+  --ucla-green: rgb(0, 255, 135);
+  --ucla-janss-steps-green: rgb(50, 170, 86);
+  --ucla-yellow: rgb(255, 255, 0);
+  --ucla-purple: rgb(138, 105, 212);
+
+  --ucla-black: rgb(0, 0, 0);
+  --ucla-black-90: rgb(26, 26, 26);
+  --ucla-black-80: rgb(51, 51, 51);
+  --ucla-black-70: rgb(77, 77, 77);
+  --ucla-black-60: rgb(102, 102, 102);
+  --ucla-black-50: rgb(128, 128, 128);
+  --ucla-black-40: rgb(153, 153, 153);
+  --ucla-black-30: rgb(179, 179, 179);
+  --ucla-black-20: rgb(204, 204, 204);
+  --ucla-black-10: rgb(230, 230, 230);
+  --ucla-white: rgb(255, 255, 255);
+
+}

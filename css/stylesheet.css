@@ -110,16 +110,6 @@
   --duration-slowly: 0.4s;
 }
 
-.category a {
-  background-color: var(--ucla-darker-blue);
-  color: var(--ucla-white);
-  padding: var(--spacing);
-}
-
-.category a:hover {
-  background-color: var(--ucla-blue);
-}
-
 hr {
   color: var(--ucla-black-10);
 }

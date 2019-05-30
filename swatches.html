@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>UCLA Color Swatch Palette</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <style type="text/css">
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .swatch {
+      align-items: center;
+      border-bottom: 1px solid #000;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas:
+        "swatch"
+        "values";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: 1em;
+    }
+
+    .swatch:last-child {
+      border-bottom: 0;
+    }
+
+    .swatch > div:first-child {
+      border: 10px solid hsla(24, 17%, 83%, 0.5);
+      border-radius: 50%;
+      grid-area: swatch;
+      height: 75px;
+      justify-self: left;
+      width: 75px;
+    }
+
+    .swatch div:last-child {
+      font-size: var(--font-size-x-small);
+      grid-area: values;
+      height: 100px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>UCLA Color Swatch Palette</h1>    
+    </header>
+    <main>
+    <section class="palette">
+      <h3>UCLA Gold</h3>
+      <div class="swatch">
+        <div style="background: var(--ucla-gold);"></div>
+        <div>
+          <p><b>Hex: </b>#ffd100<br>
+            <b>HSL: </b>hsl(49, 100%, 50%)<br>
+            <b>RGB: </b>rgb(255, 209, 0)<br>
+           <b>Token:</b> --ucla-gold</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-darker-gold);"></div>
+        <div>
+          <p><b>Hex: </b>#ffc72c<br>
+            <b>HSL: </b>hsl(44, 100%, 59%)<br>
+            <b>RGB: </b>rgb(255, 199, 44)
+            <br>
+            <b>Token:</b> --ucla-darker-gold</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-darkest-gold);"></div>
+        <div>
+          <p><b>Hex: </b>#ffb81c<br>
+            <b>HSL: </b>hsl(41, 100%, 55%)<br>
+            <b>RGB: </b>rgb(255, 184, 28)<br>
+            <b>Token:</b> --ucla-darkest-gold</p>
+         
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-yellow);"></div>
+        <div>
+          <p><b>Hex: </b>#ff0<br>
+            <b>HSL: </b>hsl(60, 100%, 50%)<br>
+            <b>RGB: </b>rgb(255, 255, 0)<br>
+            <b>Token:</b> --ucla-yellow</p>
+        </div>
+      </div>
+  
+    </section>
+    <section class="palette">
+      <h3>UCLA Blue</h3>
+      <div class="swatch">
+        <div style="background: var(--ucla-blue);"></div>
+        <div>
+          <p><b>Hex: </b>#2774ae<br>
+            <b>HSL: </b>hsl(206, 63%, 42%)<br>
+            <b>RGB: </b>rgb(39, 116, 174)<br>
+           <b>Token:</b> --ucla-blue</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-lightest-blue);"></div>
+        <div>
+          <p><b>Hex: </b>#daebfe<br>
+            <b>HSL: </b>hsl(212, 95%, 93%)<br>
+            <b>RGB: </b>rgb(218, 235, 254)<br>
+            <b>Token:</b> --ucla-lightest-blue</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-lighter-blue);"></div>
+        <div>
+          <p><b>Hex: </b>#8bb8e8<br>
+            <b>HSL: </b>hsl(211, 67%, 73%)<br>
+            <b>RGB: </b>rgb(139, 184, 232)<br>
+            <b>Token:</b> --ucla-lighter-blue</p>
+         
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-darker-blue);"></div>
+        <div>
+          <p><b>Hex: </b>#005587<br>
+            <b>HSL: </b>hsl(202, 100%, 26%)<br>
+            <b>RGB: </b>rgb(0, 85, 135)<br>
+            <b>Token:</b> --ucla-darker-blue</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-darkest-blue);"></div>
+        <div>
+          <p><b>Hex: </b>#003b5c<br>
+            <b>HSL: </b>hsl(202, 100%, 18%)<br>
+            <b>RGB: </b>rgb(0, 59, 92)<br>
+            <b>Token:</b> --ucla-darkest-blue</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="palette">
+      <h3>Accent Colors</h3>
+      <div class="swatch">
+        <div style="background: var(--ucla-cyan);"></div>
+        <div>
+          <p><b>Hex:</b> #0ff<br>
+            <b>HSL: </b>hsl(180, 100%, 50%)<br>
+            <b>RGB: </b>rgb(0, 255, 255)
+           <b>Token:</b> --ucla-cyan</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-magenta);"></div>
+        <div>
+          <p><b>Hex:</b> #ff00a5<br>
+            <b>HSL: </b>hsl(321, 100%, 50%)<br>
+            <b>RGB: </b>rgb(255, 0, 165)<br>
+            <b>Token:</b> --ucla-magenta</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-green);"></div>
+        <div>
+          <p><b>Hex: </b>#00ff87<br>
+            <b>HSL: </b>hsl(152, 100%, 50%)<br>
+            <b>RGB: </b>rgb(0, 255, 135)<br>
+            <b>Token:</b> --ucla-green</p>
+         
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-janss-steps-green);"></div>
+        <div>
+          <p><b>Hex: </b>#32aa56<br>
+            <b>HSL: </b>hsl(138, 55%, 43%)<br>
+            <b>RGB: </b>rgb(50, 170, 86)<br>
+            <b>Token:</b> --ucla-janss-steps-green</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-purple);"></div>
+        <div>
+          <p><b>Hex: </b>#8a69d4<br>
+            <b>HSL: </b>hsl(259, 55%, 62%)<br>
+            <b>RGB: </b>rgb(138, 105, 212)<br>
+            <b>Token:</b> --ucla-purple</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="palette">
+      <h3>Blacks</h3>
+      <div class="swatch">
+        <div style="background: var(--ucla-black);"></div>
+        <div>
+          <p><b>Hex: </b>#000<br>
+            <b>HSL: </b>hsl(0, 0%, 0%)<br>
+            <b>RGB: </b>rgb(0, 0, 0)<br>
+            <b>Token:</b> --ucla-black</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-90);"></div>
+        <div>
+          <p><b>Hex: </b>#1a1a1a<br>
+            <b>HSL: </b>hsl(0, 0%, 10%)<br>
+            <b>RGB: </b>rgb(26, 26, 26)<br>
+            <b>Token:</b> --ucla-black-90</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-80);"></div>
+        <div>
+          <p><b>Hex: </b>#333<br>
+            <b>HSL: </b>hsl(0, 0%, 20%)<br>
+            <b>RGB: </b>rgb(51, 51, 51)<br>
+            <b>Token:</b> --ucla-black-80</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-70);"></div>
+        <div>
+          <p><b>Hex: </b>#4d4d4d<br>
+            <b>HSL: </b>hsl(0, 0%, 30%)<br>
+            <b>RGB: </b>rgb(77, 77, 77)<br>
+            <b>Token:</b> --ucla-black-70</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-60);"></div>
+        <div>
+          <p><b>Hex: </b>#666<br>
+            <b>HSL: </b>hsl(0, 0%, 40%)<br>
+            <b>RGB: </b>rgb(102, 102, 102)<br>
+            <b>Token:</b> --ucla-black-40</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-50);"></div>
+        <div>
+          <p><b>Hex: </b>#808080<br>
+            <b>HSL: </b>hsl(0, 0%, 50%)<br>
+            <b>RGB: </b>rgb(128, 128, 128)<br>
+            <b>Token:</b> --ucla-black-50</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-40);"></div>
+        <div>
+          <p><b>Hex: </b>#999<br>
+            <b>HSL: </b>hsl(0, 0%, 60%)<br>
+            <b>RGB: </b>rgb(153, 153, 153)<br>
+            <b>Token:</b> --ucla-black-40</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-30);"></div>
+        <div>
+          <p><b>Hex: </b>#b3b3b3<br>
+            <b>HSL: </b>hsl(0, 0%, 70%)<br>
+            <b>RGB: </b>rgb(179, 179, 179)<br>
+            <b>Token:</b> --ucla-black-30</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-20);"></div>
+        <div>
+          <p><b>Hex: </b>#ccc<br>
+            <b>HSL: </b>hsl(0, 0%, 80%)<br>
+            <b>RGB: </b>rgb(204, 204, 204)<br>
+            <b>Token:</b> --ucla-black-20</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-black-10);"></div>
+        <div>
+          <p><b>Hex: </b>#000<br>
+            <b>HSL: </b>hsl(0, 0%, 90%)<br>
+            <b>RGB: </b>rgb(230, 230, 230)<br>
+            <b>Token:</b> --ucla-black-10</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--ucla-white);"></div>
+        <div>
+          <p><b>Hex: </b>#e6e6e6<br>
+            <b>HSL: </b>hsl(0, 0%, 100%)<br>
+            <b>RGB: </b>rgb(255, 255, 255)<br>
+            <b>Token:</b> --ucla-white</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  </body>
+
+</html>
