@@ -2,3 +2,50 @@
    Heading content semantics
    w3c.github.io/html/dom.html#heading-content
    ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+h1 {
+  font-size: var(--font-size-display);
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: var(--font-size-x-large);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+}
+
+h5 {
+  font-size: var(--font-size);
+  line-height: var(--line-height-text);
+}
+
+h6 {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-text);
+}
+
+.h2,
+.h3 {
+  color: var(--ucla-black-60);
+  font-size: var(--font-size);
+  line-height: var(--line-height-text);
+}

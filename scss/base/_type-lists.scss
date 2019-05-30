@@ -2,5 +2,14 @@
    Lists semantics
    w3c.github.io/html/textlevel-semantics.html
    =====================================================
-   ul li
 */
+
+ul,
+ol {
+  color: var(--ucla-black-80);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-text);
+  margin: 0;
+  padding: 0;
+}

@@ -2,3 +2,23 @@
    Paragraphs semantics
    w3c.github.io/html/textlevel-semantics.html
    ===================================================== */
+
+p {
+  line-height: var(--line-height-text);
+}
+
+.standfirst,
+.leadline {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-alt);
+}
+
+small,
+.small,
+.legal {
+  font-size: var(--font-size-x-small);
+}
+
+code {
+  font-family: var(--font-family-code);
+}

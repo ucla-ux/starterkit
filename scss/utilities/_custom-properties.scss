@@ -2,9 +2,26 @@
   /* Typography
 
   // ========================================== */
-  --font-family: Helvetica, sans-serif;
-  --font-family-display: 'Merriweather', serif;
-  --font-family-alt: Futura, Arial, sans-serif;
+  --font-family: "Helvetica Now", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-display: --font-family;
+  --font-family-alt:
+    -apple-system,
+    BlinkMacSystemFont,
+    helvetica neue,
+    helvetica,
+    Ubuntu,
+    roboto,
+    noto,
+    segoe ui,
+    arial,
+    sans-serif;
+  --font-family-mono:
+    Menlo,
+    Consolas,
+    Monaco,
+    Liberation Mono,
+    Lucida Console,
+    monospace;
   --font-weight-thin: 100;
   --font-weight-light: 300;
   --font-weight: 400;
@@ -19,65 +36,59 @@
   /* Add values for your typographic hierarchy in em/rem units: */
 
   /* Very large sizes */
-  --font-size-xxxx-display: 5.202rem;
-  --font-size-xxx-display: 3.247rem;
-  --font-size-xx-display: 2.887rem;
-  --font-size-x-display: 2.566rem;
-  --font-size-display: 2.281rem;
+  //--font-size-xxxx-display: 4.5rem;
+  //--font-size-xxx-display: 3.247rem;
+  //--font-size-xx-display: 2.887rem;
+  //--font-size-x-display: 2.566rem;
+  --font-size-display: 4.5rem; //54px
 
   /* Large sizes */
-  --font-size-xxxx-large: 2.027rem;
-  --font-size-xxx-large: 1.802rem;
-  --font-size-xx-large: 1.602rem;
-  --font-size-x-large: 1.424rem;
-  --font-size-large: 1.266rem;
+  --font-size-xx-large: 3rem; //48px
+  --font-size-x-large: 2.25rem; //36px
+  --font-size-large: 1.5rem; //24px
 
   /* Regular sizes */
-  --font-size-medium: 1.125rem;
-  --font-size: 1rem;
+  --font-size-medium: 1.125rem; //20px
+  --font-size: 1rem; //16px
 
   /* Small sizes */
-  --font-size-small: 0.889rem;
-  --font-size-x-small: 0.79rem;
+  --font-size-small: 0.8rem; //12.8px
+  --font-size-x-small: 0.75rem; //12px
 
   /* set base values */
   --text-base-size: var(--font-size);
   --text-scale-ratio: 1.125; /* major second */
   --text-scale-ratio-alt: 1.2;
-  --line-height-text: 1.4;
-  --line-height-heading: 1;
+  --line-height-text: 1.5; //150%
+  --line-height-heading: 112.5%;
+  --line-height-alt: 1.25; //125%
 
-  /* hsl color space */
-  --ucla-gold: hsl(49, 100%, 50%); /* #ffd100 */
-  --ucla-darker-gold: hsl(44, 100%, 59%); /* #ffc72c */
-  --ucla-darkest-gold: hsl(41, 100%, 55%); /* #ffb81c */
-  --ucla-yellow: hsl(60, 100%, 50%);
-
-  --ucla-blue: hsl(206, 63%, 42%); /* #2774ae */
-  --ucla-lightest-blue: hsl(212, 95%, 93%); /* #daebfe */
-  --ucla-lighter-blue: hsl(211, 67%, 73%); /* #8bb8e8 */
-  --ucla-darker-blue: hsl(202, 100%, 26%); /* #005587 */
-  --ucla-darkest-blue: hsl(202, 100%, 18%); /* #003b5c */
-  
-  
-  --ucla-cyan: hsl(180, 100%, 50%);
-  --ucla-magenta: hsl(321, 100%, 50%);
-  --ucla-green: hsl(152, 100%, 50%);
-  --ucla-janss-steps-green: hsl(138, 55%, 43%);
-  --ucla-purple: hsl(259, 55%, 62%);
-
-  --ucla-black: hsl(0, 0%, 0%);
-  --ucla-black-90: hsl(0, 0%, 10%);
-  --ucla-black-80: hsl(0, 0%, 20%);
-  --ucla-black-70: hsl(0, 0%, 30%);
-  --ucla-black-60: hsl(0, 0%, 40%);
-  --ucla-black-50: hsl(0, 0%, 50%);
-  --ucla-black-40: hsl(0, 0%, 60%);
-  --ucla-black-30: hsl(0, 0%, 70%);
-  --ucla-black-20: hsl(0, 0%, 80%);
-  --ucla-black-10: hsl(0, 0%, 90%);
-  --ucla-white: hsl(0, 0%, 100%);
-  
+  /* Hex color space */
+  --ucla-gold: #ffd100;
+  --ucla-blue: #2774ae;
+  --ucla-lightest-blue: #daebfe;
+  --ucla-lighter-blue: #8bb8e8;
+  --ucla-darker-blue: #005587;
+  --ucla-darkest-blue: #003b5c;
+  --ucla-darker-gold: #ffc72c;
+  --ucla-darkest-gold: #ffb81c;
+  --ucla-cyan: #0ff;
+  --ucla-magenta: #ff00a5;
+  --ucla-green: #00ff87;
+  --ucla-janss-steps-green: #32aa56;
+  --ucla-yellow: #ff0;
+  --ucla-purple: #8a69d4;
+  --ucla-black: #000;
+  --ucla-black-90: #1a1a1a;
+  --ucla-black-80: #333;
+  --ucla-black-70: #4d4d4d;
+  --ucla-black-60: #666;
+  --ucla-black-50: #808080;
+  --ucla-black-40: #999;
+  --ucla-black-30: #b3b3b3;
+  --ucla-black-20: #ccc;
+  --ucla-black-10: #e6e6e6;
+  --ucla-white: #fff;
 
   /* Border radii
  // ========================================== */
@@ -99,14 +110,13 @@
 // ========================================== */
 
   --max-width: 90rem;
- 
   --spacing-x-small: 0.25rem;
   --spacing-small: 0.5rem;
   --spacing: 0.75rem;
   --spacing-medium: 1rem;
   --spacing-large: 1.5rem;
   --spacing-xx-small: 0.125rem;
-   --spacing-x-large: 2rem;
+  --spacing-x-large: 2rem;
   --spacing-xx-large: 3rem;
 
   /* Timing

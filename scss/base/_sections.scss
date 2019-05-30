@@ -5,11 +5,42 @@
 // body, header, nav, aside, footer, article, section
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  border-top: 25px solid var(--ucla-blue);
+  color: var(--ucla-black-80);
+  display: grid;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  grid-gap: 2vw;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0;
+}
+
+header {
+  grid-column: 3 / -1;
+  grid-row: 1;
+}
+
+main {
+  display: grid;
+  grid-column: 3 / 10;
+  grid-row: 2;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.category {
+  border: 1px solid var(--ucla-blue);
+  border-bottom: 3px solid var(--ucla-blue);
+  border-top: 3px solid var(--ucla-blue);
+  margin: var(--spacing);
+  padding: var(--spacing-large);
 }
