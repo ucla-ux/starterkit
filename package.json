@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
+    "braces": "^2.3.1",
     "browser-sync": "^2.26.7",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
