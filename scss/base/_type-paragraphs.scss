@@ -4,21 +4,21 @@
    ===================================================== */
 
 p {
-  line-height: var(--line-height-text);
+  line-height: var(--ucla-line-height-text);
 }
 
 .standfirst,
 .leadline {
-  font-size: var(--font-size-large);
-  line-height: var(--line-height-alt);
+  font-size: var(--ucla-font-size-large);
+  line-height: var(--ucla-line-height-alt);
 }
 
 small,
 .small,
 .legal {
-  font-size: var(--font-size-x-small);
+  font-size: var(--ucla-font-size-x-small);
 }
 
 code {
-  font-family: var(--font-family-code);
+  font-family: var(--ucla-font-family-code);
 }

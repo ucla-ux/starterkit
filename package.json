@@ -6,12 +6,12 @@
     "@frctl/mandelbrot": "^1.2.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "braces": "^2.3.1",
+    "autoprefixer": "^9.6.1",
+    "braces": "^2.3.2",
     "browser-sync": "^2.26.7",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
-    "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.8.0"
+    "stylelint-order": "^3.0.1",
+    "stylelint-scss": "^3.9.2"
   }
 }

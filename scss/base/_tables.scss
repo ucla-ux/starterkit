@@ -2,3 +2,26 @@
 //   Tablular data
 //   w3c.github.io/html/tabular-data.html
 // =====================================================
+
+table {
+  border-collapse: collapse;
+  margin: var(--ucla-spacing) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: var(--ucla-border-style-thin);
+  padding: var(--ucla-spacing) 0;
+}
+
+td {
+  border-bottom: var(--ucla-border-style-thin);
+  padding: var(--ucla-spacing);
+}
+
+td,
+th,
+tr {
+  vertical-align: middle;
+}

@@ -1,0 +1,382 @@
+:root {
+  /* Add UCLA name space to all CSS properties
+   UCLA Brand Colors
+  // ========================================== */
+  --ucla-gold: #ffd100;
+  --ucla-blue: #2774ae;
+  --ucla-lightest-blue: #daebfe;
+  --ucla-lighter-blue: #8bb8e8;
+  --ucla-darker-blue: #005587;
+  --ucla-darkest-blue: #003b5c;
+  --ucla-darker-gold: #ffc72c;
+  --ucla-darkest-gold: #ffb81c;
+  --ucla-cyan: #0ff;
+  --ucla-magenta: #ff00a5;
+  --ucla-green: #00ff87;
+  --ucla-janss-steps-green: #32aa56;
+  --ucla-yellow: #ff0;
+  --ucla-purple: #8a69d4;
+  --ucla-black: #000;
+  --ucla-black-90: #1a1a1a;
+  --ucla-black-80: #333;
+  --ucla-black-70: #4d4d4d;
+  --ucla-black-60: #666;
+  --ucla-black-50: #808080;
+  --ucla-black-40: #999;
+  --ucla-black-30: #b3b3b3;
+  --ucla-black-20: #ccc;
+  --ucla-black-10: #e6e6e6;
+  --ucla-white: #fff;
+  /* Typography
+  // ========================================== */
+  --ucla-font-family: Helvetica, Arial, sans-serif;
+  --ucla-font-family-display: --ucla-font-family;
+  --ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  /* Font Weights */
+  --ucla-font-weight-thin: 200;
+  --ucla-font-weight-light: 300;
+  --ucla-font-weight: 400;
+  --ucla-font-weight-medium: 500;
+  --ucla-font-weight-semi-bold: 600;
+  --ucla-font-weight-bold: 700;
+  --ucla-font-weight-xbold: 800;
+  --ucla-font-weight-black: 900;
+  /* Type scale */
+  --ucla-text-scale-ratio: 1.125;
+  /* major second */
+  /* Very large sizes */
+  --ucla-font-size-display: 4.5rem;
+  /* Large sizes */
+  --ucla-font-size-xx-large: 3rem;
+  --ucla-font-size-x-large: 2.25rem;
+  --ucla-font-size-large: 1.5rem;
+  /* Regular sizes */
+  --ucla-font-size-medium: 1.125rem;
+  --ucla-font-size: 1rem;
+  /* Small sizes */
+  --ucla-font-size-small: 0.8rem;
+  --ucla-font-size-x-small: 0.75rem;
+  /* Line height */
+  --ucla-line-height-text: 1.5;
+  --ucla-line-height-display: 1.125;
+  --ucla-line-height-alt: 1.25;
+  --ucla-line-height-text: 1;
+  /* Border radii
+ // ========================================== */
+  --ucla-border-radius-x-small: 0.25rem;
+  --ucla-border-radius-small: 0.5rem;
+  --ucla-border-radius-medium: 0.75rem;
+  --ucla-border-radius-large: 1rem;
+  --ucla-border-radius-circle: 50%;
+  /* Border widths
+// ========================================== */
+  --ucla-border-width-hairline: 1px;
+  --ucla-border-width-thin: 2px;
+  --ucla-border-width-thick: 5px;
+  --ucla-border: var(--ucla-border-width-hairline) solid var(--ucla-lighter-blue);
+  /* Spacing
+// ========================================== */
+  --ucla-max-width: 90rem;
+  --ucla-spacing-x-small: 0.25rem;
+  --ucla-spacing-small: 0.5rem;
+  --ucla-spacing: 0.75rem;
+  --ucla-spacing-medium: 1rem;
+  --ucla-spacing-large: 1.5rem;
+  --ucla-spacing-xx-small: 0.125rem;
+  --ucla-spacing-x-large: 2rem;
+  --ucla-spacing-xx-large: 3rem;
+  /* Breakpoints relative to 16px base font
+// ========================================== */
+  --ucla-bp-x-small: 18.75em;
+  --ucla-bp-small: 30em;
+  --ucla-bp-medium: 48em;
+  --ucla-bp-large: 64em;
+  --ucla-bp-x-large: 75em // 1200px;
+  --ucla-bp-xx-large: 87.5rem;
+}
+
+hr {
+  color: var(--ucla-black-10);
+}
+
+/* =====================================================
+   Print
+   =====================================================
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  border-top: 25px solid var(--ucla-blue);
+  color: var(--ucla-black-80);
+  font-family: var(--ucla-font-family);
+  font-size: var(--ucla-font-size);
+  margin: 0;
+}
+
+main,
+header,
+footer,
+aside {
+  margin: auto;
+  min-width: var(--ucla-max-width);
+}
+
+aside {
+  border: var(--ucla-border);
+  padding: var(--ucla-spacing-x-large);
+}
+
+table {
+  border-collapse: collapse;
+  margin: var(--ucla-spacing) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: var(--ucla-border-style-thin);
+  padding: var(--ucla-spacing) 0;
+}
+
+td {
+  border-bottom: var(--ucla-border-style-thin);
+  padding: var(--ucla-spacing);
+}
+
+td,
+th,
+tr {
+  vertical-align: middle;
+}
+
+/* =====================================================
+   Text-level semantics
+   w3c.github.io/html/textlevel-semantics.html
+   ===================================================== */
+/* =====================================================
+   Heading content semantics
+   w3c.github.io/html/dom.html#heading-content
+   ===================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--ucla-font-weight-bold);
+  line-height: var(--ucla-line-height-heading);
+}
+
+h1,
+.h1 {
+  font-size: var(--ucla-font-size-display);
+}
+
+h2,
+.h2 {
+  font-size: var(--ucla-font-size-x-large);
+}
+
+h3,
+.h3 {
+  font-size: var(--ucla-font-size-large);
+}
+
+h4,
+.h4 {
+  font-size: var(--ucla-font-size-medium);
+}
+
+h5,
+.h5 {
+  font-size: var(--ucla-font-size);
+  line-height: var(--ucla-line-height-text);
+}
+
+h6,
+.h6 {
+  font-size: var(--ucla-font-size-small);
+  line-height: var(--ucla-line-height-text);
+}
+
+/* =====================================================
+   Lists semantics
+   w3c.github.io/html/textlevel-semantics.html
+   =====================================================
+*/
+ul,
+ol {
+  color: var(--ucla-black-80);
+  font-size: var(--ucla-font-size);
+  font-weight: var(--ucla-font-weight-bold);
+  line-height: var(--ucla-line-height-text);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: var(--ucla-spacing);
+}
+
+/* =====================================================
+   Paragraphs semantics
+   w3c.github.io/html/textlevel-semantics.html
+   ===================================================== */
+p {
+  line-height: var(--ucla-line-height-text);
+}
+
+.standfirst,
+.leadline {
+  font-size: var(--ucla-font-size-large);
+  line-height: var(--ucla-line-height-alt);
+}
+
+small,
+.small,
+.legal {
+  font-size: var(--ucla-font-size-x-small);
+}
+
+code {
+  font-family: var(--ucla-font-family-code);
+}
+
+/* =====================================================
+   Quotes
+   w3c.github.io/html/textlevel-semantics.html
+   =====================================================
+*/
+.tags h2 {
+  border-bottom: 1px solid var(--ucla-blue);
+  margin: var(--ucla-spacing) 0;
+}
+
+.tags h3 {
+  font-style: italic;
+}
+
+.tags ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+}
+
+.tags li {
+  margin: var(--ucla-spacing-large) var(--ucla-spacing-small);
+}
+
+.tags a {
+  background-color: var(--ucla-ucla-darker-blue);
+  color: var(--ucla-white);
+  padding: var(--ucla-spacing);
+  text-decoration: none;
+}
+
+.tags a:hover,
+.tags a:focus {
+  background-color: var(--ucla-blue);
+}
+
+body {
+  display: grid;
+  grid-gap: 2vw;
+}
+
+header {
+  grid-column: 2 / -1;
+  grid-row: 1;
+}
+
+.typography main {
+  display: grid;
+  font-family: var(--ucla-font-family);
+  grid-gap: 1vw;
+  grid-template-areas: "typeface", "type-scale", "type-sample";
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.typography header h1 {
+  font-size: var(--ucla-font-size-display);
+  font-weight: var(--ucla-font-weight-bold);
+  margin: 0;
+}
+
+.typography .typeface {
+  grid-area: typeface;
+}
+
+.typography .typescale {
+  grid-area: type-scale;
+}
+
+.typography article {
+  font-size: var(--ucla-font-size-x-large);
+  grid-area: type-sample;
+  overflow-wrap: break-word;
+}
+
+.typography article h2 {
+  font-size: var(--ucla-font-size-xx-large);
+  font-weight: var(--ucla-font-weight-bold);
+}
+
+.typography footer {
+  border-top: var(--ucla-border-width-hairline) solid var(--ucla-color-border-separator);
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: var(--ucla-spacing-medium);
+}
+
+.typography .thin {
+  font-weight: var(--ucla-font-weight-thin);
+}
+
+.typography .light {
+  font-weight: var(--ucla-font-weight-light);
+}
+
+.typography .regular {
+  font-weight: var(--ucla-font-weight);
+}
+
+.typography .medium {
+  font-weight: var(--ucla-font-weight-medium);
+}
+
+.typography .semi-bold {
+  font-weight: var(--ucla-font-weight-semi-bold);
+}
+
+.typography .bold {
+  font-weight: var(--ucla-font-weight-bold);
+}
+
+.typography .xbold {
+  font-weight: var(--ucla-font-weight-xbold);
+}
+
+.typography .black {
+  font-weight: var(--ucla-font-weight-black);
+}
+
+.typography .italic {
+  font-style: italic;
+}
+/*# sourceMappingURL=styles.css.map */

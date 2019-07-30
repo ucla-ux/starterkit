@@ -2,7 +2,7 @@
 //   Sections
 //   w3c.github.io/html/sections.html
 // ======================================================
-// body, header, nav, aside, footer, article, section
+// body, header, nav, main, aside, footer, article, section
 
 html {
   box-sizing: border-box;
@@ -17,32 +17,20 @@ html {
 body {
   border-top: 25px solid var(--ucla-blue);
   color: var(--ucla-black-80);
-  display: grid;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  grid-gap: 2vw;
-  grid-template-columns: repeat(12, 1fr);
+  font-family: var(--ucla-font-family);
+  font-size: var(--ucla-font-size);
   margin: 0;
 }
 
-header {
-  grid-column: 2 / -1;
-  grid-row: 1;
+main,
+header,
+footer,
+aside {
+  margin: auto;
+  min-width: var(--ucla-max-width);
 }
 
-main {
-  display: grid;
-  grid-column: 2 / -1;
-  grid-gap: 2vw;
-  grid-row: 2;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.category h2 {
-  border-bottom: 1px solid var(--ucla-blue);
-  margin: var(--spacing) 0;
-}
-
-.category h3 {
-  font-style: italic;
+aside {
+  border: var(--ucla-border);
+  padding: var(--ucla-spacing-x-large);
 }

@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  grid-gap: 2vw;
+  //grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 2 / -1;
+  grid-row: 1;
+}
+

@@ -9,43 +9,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-heading);
+  font-weight: var(--ucla-font-weight-bold);
+  line-height: var(--ucla-line-height-heading);
 }
 
-h1 {
-  font-size: var(--font-size-display);
+h1,
+.h1 {
+  font-size: var(--ucla-font-size-display);
 }
 
-header h1 {
-  margin-bottom: 0;
+h2,
+.h2 {
+  font-size: var(--ucla-font-size-x-large);
 }
 
-h2 {
-  font-size: var(--font-size-x-large);
-}
-
-h3 {
-  font-size: var(--font-size-large);
-}
-
-h4 {
-  font-size: var(--font-size-medium);
-}
-
-h5 {
-  font-size: var(--font-size);
-  line-height: var(--line-height-text);
-}
-
-h6 {
-  font-size: var(--font-size-small);
-  line-height: var(--line-height-text);
-}
-
-.h2,
+h3,
 .h3 {
-  color: var(--ucla-black-60);
-  font-size: var(--font-size);
-  line-height: var(--line-height-text);
+  font-size: var(--ucla-font-size-large);
+}
+
+h4,
+.h4 {
+  font-size: var(--ucla-font-size-medium);
+}
+
+h5,
+.h5 {
+  font-size: var(--ucla-font-size);
+  line-height: var(--ucla-line-height-text);
+}
+
+h6,
+.h6 {
+  font-size: var(--ucla-font-size-small);
+  line-height: var(--ucla-line-height-text);
 }
