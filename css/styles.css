@@ -55,8 +55,8 @@
   --ucla-font-size-medium: 1.125rem;
   --ucla-font-size: 1rem;
   /* Small sizes */
-  --ucla-font-size-small: 0.8rem;
-  --ucla-font-size-x-small: 0.75rem;
+  --ucla-font-size-small: .8rem;
+  --ucla-font-size-x-small: .75rem;
   /* Line height */
   --ucla-line-height-text: 1.5;
   --ucla-line-height-display: 1.125;
@@ -162,6 +162,34 @@ tr {
    Text-level semantics
    w3c.github.io/html/textlevel-semantics.html
    ===================================================== */
+.font-size-small {
+  font-size: var(--ucla-font-size-small);
+}
+
+.font-size {
+  font-size: var(--ucla-font-size);
+}
+
+.font-size-medium {
+  font-size: var(--ucla-font-size-medium);
+}
+
+.font-size-large {
+  font-size: var(--ucla-font-size-large);
+}
+
+.font-size-x-large {
+  font-size: var(--ucla-font-size-x-large);
+}
+
+.font-size-xx-large {
+  font-size: var(--ucla-font-size-xx-large);
+}
+
+.font-size-display {
+  font-size: var(--ucla-font-size-display);
+}
+
 /* =====================================================
    Heading content semantics
    w3c.github.io/html/dom.html#heading-content
@@ -306,9 +334,8 @@ header {
 .typography main {
   display: grid;
   font-family: var(--ucla-font-family);
-  grid-gap: 1vw;
-  grid-template-areas: "typeface", "type-scale", "type-sample";
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2vw;
+  grid-template-areas: "type-face", "type-scale", "type-sample";
 }
 
 .typography header h1 {
@@ -317,21 +344,25 @@ header {
   margin: 0;
 }
 
-.typography .typeface {
+.typography .type-face {
   grid-area: typeface;
 }
 
-.typography .typescale {
+.typography .type-scale {
   grid-area: type-scale;
 }
 
-.typography article {
+.typography .type-scale dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.typography .type-sample {
   font-size: var(--ucla-font-size-x-large);
-  grid-area: type-sample;
   overflow-wrap: break-word;
 }
 
-.typography article h2 {
+.typography .type-sample h2 {
   font-size: var(--ucla-font-size-xx-large);
   font-weight: var(--ucla-font-weight-bold);
 }

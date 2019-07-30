@@ -3,12 +3,12 @@
   main {
   display: grid;
   font-family: var(--ucla-font-family);
-  grid-gap: 1vw;
+  grid-gap: 2vw;
   grid-template-areas:
-    "typeface",
+    "type-face",
     "type-scale",
     "type-sample";
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
   header h1 {
@@ -17,25 +17,31 @@
   margin: 0;
 }
 
-.typeface {
+.type-face {
   grid-area: typeface;
 }
 
-.typescale {
+.type-scale {
   grid-area: type-scale;
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 }
 
 
- article {
+ .type-sample {
   font-size: var(--ucla-font-size-x-large);
-  grid-area: type-sample;
   overflow-wrap: break-word;
+
+  h2 {
+    font-size: var(--ucla-font-size-xx-large);
+    font-weight: var(--ucla-font-weight-bold);
+  }
+  
 }
 
-  article h2 {
-  font-size: var(--ucla-font-size-xx-large);
-  font-weight: var(--ucla-font-weight-bold);
-}
 
  footer {
   border-top: var(--ucla-border-width-hairline) solid var(--ucla-color-border-separator);
@@ -82,3 +88,4 @@
     font-style: italic;
   }
 }
+
