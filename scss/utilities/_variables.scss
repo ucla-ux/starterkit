@@ -33,10 +33,12 @@ $ucla-white: #fff;
 // ========================================== */
 $ucla-font-family: Helvetica, Arial, sans-serif;
 $ucla-font-family-display: $ucla-font-family;
-$ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-$ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+$ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
+  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono",
+  "Lucida Console", monospace;
 
-// Font Weights // 
+// Font Weights //
 $ucla-font-weight-thin: 100;
 $ucla-font-weight-light: 300;
 $ucla-font-weight: 400;
@@ -62,8 +64,8 @@ $ucla-font-size-medium: 1.125rem; //20px
 $ucla-font-size: 1rem; //16px
 
 /* Small sizes */
-$ucla-font-size-small: 0.8rem; //12.8px
-$ucla-font-size-x-small: 0.75rem; //12px
+$ucla-font-size-small: .8rem; //12.8px
+$ucla-font-size-x-small: .75rem; //12px
 
 /* Line height */
 $ucla-line-height-text: 1.5; //150%
@@ -71,13 +73,12 @@ $ucla-line-height-display: 1.125; //112.5%
 $ucla-line-height-alt: 1.25; //125%
 $ucla-line-height-text: 1;
 
-
 /* Border radii
 // ========================================== */
 
-$ucla-border-radius-x-small: 0.25rem;
-$ucla-border-radius-small: 0.5rem;
-$ucla-border-radius-medium: 0.75rem;
+$ucla-border-radius-x-small: .25rem;
+$ucla-border-radius-small: .5rem;
+$ucla-border-radius-medium: .75rem;
 $ucla-border-radius-large: 1rem;
 $ucla-border-radius-circle: 50%;
 
@@ -92,22 +93,21 @@ $ucla-border-width-thick: 5px;
 // ========================================== */
 
 $ucla-max-width: 90rem;
-$ucla-spacing-x-small: 0.25rem;
-$ucla-spacing-small: 0.5rem;
-$ucla-spacing: 0.75rem;
+$ucla-spacing-x-small: .25rem;
+$ucla-spacing-small: .5rem;
+$ucla-spacing: .75rem;
 $ucla-spacing-medium: 1rem;
 $ucla-spacing-large: 1.5rem;
-$ucla-spacing-xx-small: 0.125rem;
+$ucla-spacing-xx-small: .125rem;
 $ucla-spacing-x-large: 2rem;
 $ucla-spacing-xx-large: 3rem;
-
 
 // breakpoints relative to 16px base font
 $ucla-bp-x-small: 18.75em; //300px
 $ucla-bp-small: 30em; //480px
 $ucla-bp-medium: 48em; // 768px;
 $ucla-bp-large: 64em; // 1024px
-$ucla-bp-x-large: 75em // 1200px;
+$ucla-bp-x-large: 75em; // 1200px;
 $ucla-bp-xx-large: 87.5rem; //1400px;
 
 // Alternative color spaces

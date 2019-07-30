@@ -10,22 +10,24 @@ h4,
 h5,
 h6 {
   font-weight: var(--ucla-font-weight-bold);
-  line-height: var(--ucla-line-height-heading);
 }
 
 h1,
 .h1 {
   font-size: var(--ucla-font-size-display);
+  line-height: var(--ucla-line-height);
 }
 
 h2,
 .h2 {
   font-size: var(--ucla-font-size-x-large);
+  line-height: var(--ucla-line-height-display);
 }
 
 h3,
 .h3 {
   font-size: var(--ucla-font-size-large);
+  line-height: var(--ucla-line-height-display);
 }
 
 h4,

@@ -5,6 +5,7 @@
 // body, header, nav, main, aside, footer, article, section
 
 html {
+  border-top: 25px solid var(--ucla-blue);
   box-sizing: border-box;
 }
 
@@ -15,22 +16,19 @@ html {
 }
 
 body {
-  border-top: 25px solid var(--ucla-blue);
   color: var(--ucla-black-80);
   font-family: var(--ucla-font-family);
   font-size: var(--ucla-font-size);
-  margin: 0;
+  line-height: var(--ucla-line-height-text);
+  margin: auto;
+  max-width: var(--ucla-min-width);
 }
 
 main,
 header,
 footer,
-aside {
-  margin: auto;
-  min-width: var(--ucla-max-width);
-}
+aside {}
 
-aside {
-  border: var(--ucla-border);
-  padding: var(--ucla-spacing-x-large);
+article {
+  max-width: var(--ucla-min-width);
 }
