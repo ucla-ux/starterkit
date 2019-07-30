@@ -8,7 +8,7 @@
   h3 {
     font-style: italic;
   }
-  
+
   ul {
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@
   li {
     margin: var(--ucla-spacing-large) var(--ucla-spacing-small);
   }
-  
+
   a {
     background-color: var(--ucla-ucla-darker-blue);
     color: var(--ucla-white);
@@ -32,9 +32,4 @@
   a:focus {
     background-color: var(--ucla-blue);
   }
-  
 }
-
-
-
-

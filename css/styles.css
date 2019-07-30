@@ -245,7 +245,6 @@ ul,
 ol {
   color: var(--ucla-black-80);
   font-size: var(--ucla-font-size);
-  font-weight: var(--ucla-font-weight-bold);
   line-height: var(--ucla-line-height-text);
   margin: 0;
   padding: 0;

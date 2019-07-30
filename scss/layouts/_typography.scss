@@ -1,55 +1,51 @@
-.typography { 
-  
+.typography {
   main {
-  display: grid;
-  font-family: var(--ucla-font-family);
-  grid-gap: 2vw;
-  grid-template-areas:
-    "type-face",
-    "type-scale",
-    "type-sample";
-  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+    display: grid;
+    font-family: var(--ucla-font-family);
+    grid-gap: 2vw;
+    grid-template-areas:
+      "type-face",
+      "type-scale",
+      "type-sample";
+    //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 
   header h1 {
-  font-size: var(--ucla-font-size-display);
-  font-weight: var(--ucla-font-weight-bold);
-  margin: 0;
-}
-
-.type-face {
-  grid-area: typeface;
-}
-
-.type-scale {
-  grid-area: type-scale;
-
-  dl {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-}
-
-
- .type-sample {
-  font-size: var(--ucla-font-size-x-large);
-  overflow-wrap: break-word;
-
-  h2 {
-    font-size: var(--ucla-font-size-xx-large);
+    font-size: var(--ucla-font-size-display);
     font-weight: var(--ucla-font-weight-bold);
+    margin: 0;
   }
-  
-}
 
+  .type-face {
+    grid-area: typeface;
+  }
 
- footer {
-  border-top: var(--ucla-border-width-hairline) solid var(--ucla-color-border-separator);
-  display: grid;
-  grid-gap: 1vw;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: var(--ucla-spacing-medium);
-}
+  .type-scale {
+    grid-area: type-scale;
+
+    dl {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  .type-sample {
+    font-size: var(--ucla-font-size-x-large);
+    overflow-wrap: break-word;
+
+    h2 {
+      font-size: var(--ucla-font-size-xx-large);
+      font-weight: var(--ucla-font-weight-bold);
+    }
+  }
+
+  footer {
+    border-top: var(--ucla-border-width-hairline) solid var(--ucla-color-border-separator);
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: var(--ucla-spacing-medium);
+  }
 
   .thin {
     font-weight: var(--ucla-font-weight-thin);
@@ -66,7 +62,6 @@
   .medium {
     font-weight: var(--ucla-font-weight-medium);
   }
-
 
   .semi-bold {
     font-weight: var(--ucla-font-weight-semi-bold);
@@ -88,4 +83,3 @@
     font-style: italic;
   }
 }
-
