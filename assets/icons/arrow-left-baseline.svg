@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon/Arrow Left Baseline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Arrow-Left-Baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Background" points="0 0 24 0 24 24 0 24"></polygon>
+        <polygon id="Shape" fill="#000000" transform="translate(11.705000, 10.000000) scale(-1, 1) translate(-11.705000, -10.000000) " points="8 14.59 12.58 10 8 5.41 9.41 4 15.41 10 9.41 16"></polygon>
+    </g>
+</svg>

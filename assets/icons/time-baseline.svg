@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon/Time Baseline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Time-Baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11.991,1 C16.968,1 21,5.032 21,10 C21,14.968 16.968,19 11.991,19 C7.023,19 3,14.968 3,10 C3,5.032 7.023,1 11.991,1 Z M12,17.2 C15.978,17.2 19.2,13.978 19.2,10 C19.2,6.022 15.978,2.8 12,2.8 C8.022,2.8 4.8,6.022 4.8,10 C4.8,13.978 8.022,17.2 12,17.2 Z M12.45,5.5 L12.45,10.225 L16.5,12.628 L15.825,13.735 L11.1,10.9 L11.1,5.5 L12.45,5.5 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>
