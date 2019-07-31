@@ -21,7 +21,16 @@
 <h3>Style</h3>
 <p>The monochrome color and strong strokes create a simple and graphic icon style that is highly legible.</p>
 <h3>Accessibility</h3>
-<p>Each svg icon has a <code>role="img"</code>, an <code>arialabelled</code> referencing a unique title and a a common class name of <code>ucla-icon</code> for each icon. The icon set in this respository have been optimized with SVGO and are in the assets folder. They are placed inline on this page to support css styles.</p>
+<p>Each icon uses a double class selector.</p> 
+<p><strong>HTML</strong></p>
+<code><pre>class="ucla-icon arrow-down"</pre></code>
+<p><strong>CSS</strong></p>
+<code><pre>.ucla-icon.arrow-down {
+  color: var(--ucla-blue); 
+}</pre></code>
+
+<p>We've also added a <code>role="img"</code>, and <code>aria-labelled</code> property with an attribute referencing a title id. </p>
+<p>This icon set has been optimized with [SVGO](https://jakearchibald.github.io/svgomg/) and are available in the assets folder of this repository. They are inline for display on this page.</p>
      
 <div class="icon-list">
 
