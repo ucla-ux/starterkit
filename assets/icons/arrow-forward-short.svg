@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Icon/Arrow Forward Short</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icon/Arrow-Forward-Short" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M20.3839744,13 L0,13 L0,11 L20.3839744,11 L17,7.41 L18.3319838,6 L24,12 L18.3319838,18 L17,16.59 L20.3839744,13 Z" id="Combined-Shape" fill="#000000"></path>
-    </g>
-</svg>
+<svg class="ucla-icon arrow-forward-short" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="icon-arrow-forward-short" role="img"><title id="icon-arrow-forward-short">Icon Arrow Forward Short</title><g fill="none" fill-rule="evenodd"><path d="M20.384 13H0v-2h20.384L17 7.41 18.332 6 24 12l-5.668 6L17 16.59 20.384 13z" id="Combined-Shape" fill="#000"/></g></svg>

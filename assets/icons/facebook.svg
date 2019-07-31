@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Icon/Social/Facebook</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icon/Social/Facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M15.0396667,20 L15.0396667,13.804 L17.1195,13.804 L17.4308333,11.3891667 L15.0396667,11.3891667 L15.0396667,9.8475 C15.0396667,9.14833333 15.2338333,8.672 16.2363333,8.672 L17.5151667,8.67133333 L17.5151667,6.51166667 C17.2938333,6.48233333 16.5348333,6.4165 15.6518333,6.4165 C13.8081667,6.4165 12.5461667,7.54183333 12.5461667,9.60833333 L12.5461667,11.3891667 L10.461,11.3891667 L10.461,13.804 L12.5461667,13.804 L12.5461667,20 L15.0396667,20 Z M4.883,20 C4.39516667,20 4,19.6045 4,19.117 L4,4.883 C4,4.39516667 4.39516667,4 4.883,4 L19.1168333,4 C19.6045,4 20,4.39516667 20,4.883 L20,19.117 C20,19.6045 19.6045,20 19.1168333,20 L4.883,20 Z" id="Shape" fill="#000000"></path>
-    </g>
-</svg>
+<svg class="ucla-icon facebook" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="icon-facebook" role="img"><title id="icon-facebook">Icon Social Facebook</title><g fill="none" fill-rule="evenodd"><path d="M15.04 20v-6.196h2.08l.31-2.415h-2.39V9.848c0-.7.194-1.176 1.196-1.176h1.28v-2.16c-.222-.03-.981-.095-1.864-.095-1.844 0-3.106 1.125-3.106 3.191v1.781h-2.085v2.415h2.085V20h2.494zM4.883 20A.883.883 0 0 1 4 19.117V4.883C4 4.395 4.395 4 4.883 4h14.234c.488 0 .883.395.883.883v14.234a.883.883 0 0 1-.883.883H4.883z" id="Shape" fill="#000"/></g></svg>

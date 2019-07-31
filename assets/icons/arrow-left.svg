@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Icon/Arrow Left</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icon/Arrow-Left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Shape" fill="#000000" transform="translate(12.295000, 12.000000) scale(-1, 1) translate(-12.295000, -12.000000) " points="8.59 16.59 13.17 12 8.59 7.41 10 6 16 12 10 18"></polygon>
-    </g>
-</svg>
+<svg class="ucla-icon arrow-left" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="icon-arrow-left" role="img"><title id="icon-arrow-left">Icon Arrow Left</title><g fill="none" fill-rule="evenodd"><path id="Shape" fill="#000" transform="matrix(-1 0 0 1 24.59 0)" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></g></svg>

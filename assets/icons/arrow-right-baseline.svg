@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Icon/Arrow Right Baseline</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Icon/Arrow-Right-Baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Shape" fill="#000000" points="9 14.59 13.3265857 10 9 5.41 10.3319838 4 16 10 10.3319838 16"></polygon>
-    </g>
-</svg>
+<svg class="ucla-icon arrow-right-baseline" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="icon-arrow-right-baseline" role="img"><title id="icon-arrow-right-baseline">Icon Arrow Right Baseline</title><g fill="none" fill-rule="evenodd"><path id="Shape" fill="#000" d="M9 14.59L13.327 10 9 5.41 10.332 4 16 10l-5.668 6z"/></g></svg>
