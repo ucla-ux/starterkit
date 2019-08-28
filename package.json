@@ -7,6 +7,6 @@
     "stylelint-a11y": "^1.2.1",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^3.0.1",
-    "stylelint-scss": "^3.9.2"
+    "stylelint-scss": "^3.10.0"
   }
 }
