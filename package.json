@@ -1,14 +1,8 @@
 {
   "name": "ucla-design-system",
   "version": "0.1.0",
-  "dependencies": {
-    "@frctl/fractal": "^1.1.7",
-    "@frctl/mandelbrot": "^1.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "braces": "^2.3.2",
-    "browser-sync": "^2.26.7",
     "stylelint": "^10.1.0",
     "stylelint-a11y": "^1.2.1",
     "stylelint-config-standard": "^18.3.0",
