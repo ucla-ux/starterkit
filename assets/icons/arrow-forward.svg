@@ -1,1 +1,4 @@
-<svg class="ucla-icon arrow-forward" width="48" height="24" viewBox="0 0 48 24" aria-labelledby="icon-arrow-forward" role="img"><title id="icon-arrow-forward">Icon Arrow Forward</title><g fill="none" fill-rule="evenodd"><path id="Path" fill="#000" d="M36 4l-1.41 1.41L40.17 11H4v2h36.17l-5.58 5.59L36 20l8-8z"/></g></svg>
+<svg class="ucla-icon arrow-forward" width="48" height="24" viewBox="0 0 48 24" aria-labelledby="icon-arrow-forward" role="img">
+  <title id="icon-arrow-forward">Icon Arrow Forward</title>
+  <g><path id="Path" d="M36 4l-1.41 1.41L40.17 11H4v2h36.17l-5.58 5.59L36 20l8-8z"/></g>
+</svg>
