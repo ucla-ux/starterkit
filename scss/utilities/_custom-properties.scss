@@ -32,24 +32,8 @@
   // ========================================== */
   --ucla-font-family: Helvetica, Arial, sans-serif;
   --ucla-font-family-display: --ucla-font-family;
-  --ucla-font-family-system:
-    -apple-system,
-    BlinkMacSystemFont,
-    "helvetica neue",
-    helvetica,
-    Ubuntu,
-    roboto,
-    noto,
-    segoe ui,
-    arial,
-    sans-serif;
-  --ucla-font-family-mono:
-    Menlo,
-    Consolas,
-    Monaco,
-    "Liberation Mono",
-    "Lucida Console",
-    monospace;
+  --ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
   /* Font Weights */
   --ucla-font-weight-thin: 200;
@@ -64,21 +48,30 @@
   /* Type scale */
   --ucla-text-scale-ratio: 1.125; /* major second */
 
-  /* Very large sizes */
-  --ucla-font-size-display: 4.5rem; //54px
-
-  /* Large sizes */
-  --ucla-font-size-xx-large: 3rem; //48px
-  --ucla-font-size-x-large: 2.25rem; //36px
-  --ucla-font-size-large: 1.5rem; //24px
-
-  /* Regular sizes */
-  --ucla-font-size-medium: 1.125rem; //20px
+  --ucla-font-size-xxxx-display: 4.624rem; //73px
+  --ucla-font-size-xxx-display: 4.11rem; //65px
+  --ucla-font-size-xx-display: 3.653rem; //58px
+  --ucla-font-size-x-display: 2.887rem; //46px
+  --ucla-font-size-display: 2.566rem; // 41px
+  --ucla-font-size-xxxx-large: 2.027rem; //36px;
+  --ucla-font-size-xxx-large: 1.802rem; //28px
+  --ucla-font-size-xx-large: 1.602rem; //25px
+  --ucla-font-size-x-large: 1.424rem; //22px
+  --ucla-font-size-large: 1.266rem; //20px
+  --ucla-font-size-medium: 1.125rem; //18px
   --ucla-font-size: 1rem; //16px
+  --ucla-font-size-small: 0.889rem; // 14px
+  --ucla-font-size-x-small: 0.79rem; // 12px
 
-  /* Small sizes */
-  --ucla-font-size-small: .8rem; //12.8px
-  --ucla-font-size-x-small: .75rem; //12px
+  /* Strat comm defaults. px */
+  --ucla-stratcomm-font-size-display: 4.5rem; //54px
+  --ucla-stratcomm-font-size-xx-large: 3rem; //48px
+  --ucla-stratcomm-font-size-x-large: 2.25rem; //36px
+  --ucla-stratcomm-font-size-large: 1.5rem; //24px
+  --ucla-stratcomm-font-size-medium: 1.125rem; //20px
+  --ucla-stratcomm-font-size: 1rem; //16px
+  --ucla-stratcomm-font-size-small: .8rem; //12.8px
+  --ucla-stratcomm-font-size-x-small: .75rem; //12px
 
   /* Line height */
   --ucla-line-height-text: 1.5; //150%
@@ -100,10 +93,13 @@
 
   --ucla-border-width-hairline: 1px;
   --ucla-border-width-thin: 2px;
-  --ucla-border-width-thick: 5px;
+  --ucla-border-width-thick: 4px;
   --ucla-border:
     var(--ucla-border-width-hairline) solid
-    var(--ucla-lighter-blue);
+    var(--ucla-blue);
+  --ucla-border-thick-gold:
+    var(--ucla-border-width-thick) solid
+    var(--ucla-gold);  
 
   /* Spacing
 // ========================================== */

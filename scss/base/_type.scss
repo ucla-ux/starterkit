@@ -3,8 +3,19 @@
    w3c.github.io/html/textlevel-semantics.html
    ===================================================== */
 
-// a, em, strong, small, s, cite, q, dfn, abbr, ruby, rb, rt, rtc, rp, data,
-// time, code, var, samp, kdb, sub, sup, i, b, u, mark, bdi, bdo, span, br, wbr
+// a, em, strong, small, s, cite, q, dfn, abbr, ruby, rb, rt, rtc, rp, data, time, code, var, samp, kdb, sub, sup, i, b, u, mark, bdi, bdo, span, br, wbr
+
+
+small,
+.small,
+.legal {
+  font-size: var(--ucla-font-size-x-small);
+}
+
+code {
+  font-family: var(--ucla-font-family-code);
+}
+
 
 .font-size-small {
   font-size: var(--ucla-font-size-small);

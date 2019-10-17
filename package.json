@@ -1,12 +1,12 @@
 {
   "name": "ucla-design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {},
   "devDependencies": {
     "stylelint": "^10.1.0",
     "stylelint-a11y": "^1.2.1",
     "stylelint-config-standard": "^18.3.0",
-    "stylelint-order": "^3.0.1",
-    "stylelint-scss": "^3.10.0"
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.11.1"
   }
 }

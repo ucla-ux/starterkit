@@ -1,3 +1,10 @@
+.standfirst,
+.leadline {
+  font-size: var(--ucla-font-size-large);
+  line-height: var(--ucla-line-height-alt);
+}
+
+// used only on typesheet sample page.
 .typography {
   main {
     display: grid;

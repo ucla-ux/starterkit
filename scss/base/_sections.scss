@@ -20,8 +20,8 @@ body {
   font-family: var(--ucla-font-family);
   font-size: var(--ucla-font-size);
   line-height: var(--ucla-line-height-text);
-  margin: auto;
-  max-width: var(--ucla-min-width);
+  margin: var(--ucla-spacing-x-large);
+  max-width: var(--ucla-max-width);
 }
 
 main,

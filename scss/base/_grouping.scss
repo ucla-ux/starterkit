@@ -3,8 +3,22 @@
 //   w3c.github.io/html/grouping-content.html
 // =====================================================
 // p, address, hr, pre, blockquote, ol, ul, li, dl, dt, dd,
-// figure, figcaption, main, div
+// figure, figcaption, div
+
+p {
+  line-height: var(--ucla-line-height-text);
+}
 
 hr {
   color: var(--ucla-black-10);
+}
+
+ul,
+ol {
+  line-height: var(--ucla-line-height-text);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }

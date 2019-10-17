@@ -2,11 +2,10 @@
 
 // UTILITIES
 @import "utilities/custom-properties";
-// @import "utilities/colors"; // sass colors
-// @import "utilities/variables"; // sass variables
+@import "utilities/colors"; // sass colors
+@import "utilities/variables"; // sass variables
 
 // BASE STYLES
-@import "base/a";
 @import "base/embedded";
 @import "base/forms";
 @import "base/grouping";
@@ -15,13 +14,11 @@
 @import "base/tables";
 @import "base/type";
 @import "base/type-headings";
-@import "base/type-lists";
-@import "base/type-paragraphs";
-@import "base/type-quotes";
 
 // COMPONENTS
+@import "components/stats";
 @import "components/tags";
+@import "components/typography";
 
 // LAYOUTS
 @import "layouts/grids";
-@import "layouts/typography";

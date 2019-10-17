@@ -31,8 +31,24 @@
   // ========================================== */
   --ucla-font-family: Helvetica, Arial, sans-serif;
   --ucla-font-family-display: --ucla-font-family;
-  --ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  --ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  --ucla-font-family-system:
+    -apple-system,
+    BlinkMacSystemFont,
+    "helvetica neue",
+    helvetica,
+    Ubuntu,
+    roboto,
+    noto,
+    segoe ui,
+    arial,
+    sans-serif;
+  --ucla-font-family-mono:
+    Menlo,
+    Consolas,
+    Monaco,
+    "Liberation Mono",
+    "Lucida Console",
+    monospace;
   /* Font Weights */
   --ucla-font-weight-thin: 200;
   --ucla-font-weight-light: 300;
@@ -45,29 +61,18 @@
   /* Type scale */
   --ucla-text-scale-ratio: 1.125;
   /* major second */
-  --ucla-font-size-xxxx-display: 4.624rem;
-  --ucla-font-size-xxx-display: 4.11rem;
-  --ucla-font-size-xx-display: 3.653rem;
-  --ucla-font-size-x-display: 2.887rem;
-  --ucla-font-size-display: 2.566rem;
-  --ucla-font-size-xxxx-large: 2.027rem;
-  --ucla-font-size-xxx-large: 1.802rem;
-  --ucla-font-size-xx-large: 1.602rem;
-  --ucla-font-size-x-large: 1.424rem;
-  --ucla-font-size-large: 1.266rem;
+  /* Very large sizes */
+  --ucla-font-size-display: 4.5rem;
+  /* Large sizes */
+  --ucla-font-size-xx-large: 3rem;
+  --ucla-font-size-x-large: 2.25rem;
+  --ucla-font-size-large: 1.5rem;
+  /* Regular sizes */
   --ucla-font-size-medium: 1.125rem;
   --ucla-font-size: 1rem;
-  --ucla-font-size-small: 0.889rem;
-  --ucla-font-size-x-small: 0.79rem;
-  /* Strat comm defaults. px */
-  --ucla-stratcomm-font-size-display: 4.5rem;
-  --ucla-stratcomm-font-size-xx-large: 3rem;
-  --ucla-stratcomm-font-size-x-large: 2.25rem;
-  --ucla-stratcomm-font-size-large: 1.5rem;
-  --ucla-stratcomm-font-size-medium: 1.125rem;
-  --ucla-stratcomm-font-size: 1rem;
-  --ucla-stratcomm-font-size-small: .8rem;
-  --ucla-stratcomm-font-size-x-small: .75rem;
+  /* Small sizes */
+  --ucla-font-size-small: .8rem;
+  --ucla-font-size-x-small: .75rem;
   /* Line height */
   --ucla-line-height-text: 1.5;
   --ucla-line-height-display: 1.125;
@@ -84,13 +89,10 @@
 // ========================================== */
   --ucla-border-width-hairline: 1px;
   --ucla-border-width-thin: 2px;
-  --ucla-border-width-thick: 4px;
+  --ucla-border-width-thick: 5px;
   --ucla-border:
     var(--ucla-border-width-hairline) solid
-    var(--ucla-blue);
-  --ucla-border-thick-gold:
-    var(--ucla-border-width-thick) solid
-    var(--ucla-gold);
+    var(--ucla-lighter-blue);
   /* Spacing
 // ========================================== */
   --ucla-max-width: 90rem;
@@ -110,8 +112,7 @@
   --ucla-bp-medium: 48em;
   --ucla-bp-large: 64em;
   --ucla-bp-x-large: 75em;
-  --ucla-bp-xx-large: 87.5rem;
-}
+  --ucla-bp-xx-large: 87.5rem; }
 
 /* Add ucla- name space to all CSS properties to avoid clashes
 
@@ -131,23 +132,8 @@
 // ========================================== */
 /* Spacing
 // ========================================== */
-p {
-  line-height: var(--ucla-line-height-text);
-}
-
 hr {
-  color: var(--ucla-black-10);
-}
-
-ul,
-ol {
-  line-height: var(--ucla-line-height-text);
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
+  color: var(--ucla-black-10); }
 
 /* =====================================================
    Print
@@ -155,92 +141,67 @@ figure {
 */
 html {
   border-top: 25px solid var(--ucla-blue);
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
   color: var(--ucla-black-80);
   font-family: var(--ucla-font-family);
   font-size: var(--ucla-font-size);
   line-height: var(--ucla-line-height-text);
-  margin: var(--ucla-spacing-x-large);
-  max-width: var(--ucla-max-width);
-}
+  margin: auto;
+  max-width: var(--ucla-min-width); }
 
 article {
-  max-width: var(--ucla-min-width);
-}
+  max-width: var(--ucla-min-width); }
 
 table {
   border-collapse: collapse;
   margin: var(--ucla-spacing) 0;
   table-layout: fixed;
-  width: 100%;
-}
+  width: 100%; }
 
 th {
   border-bottom: var(--ucla-border-style-thin);
-  padding: var(--ucla-spacing) 0;
-}
+  padding: var(--ucla-spacing) 0; }
 
 td {
   border-bottom: var(--ucla-border-style-thin);
-  padding: var(--ucla-spacing);
-}
+  padding: var(--ucla-spacing); }
 
 td,
 th,
 tr {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /* =====================================================
    Text-level semantics
    w3c.github.io/html/textlevel-semantics.html
    ===================================================== */
-small,
-.small,
-.legal {
-  font-size: var(--ucla-font-size-x-small);
-}
-
-code {
-  font-family: var(--ucla-font-family-code);
-}
-
 .font-size-small {
-  font-size: var(--ucla-font-size-small);
-}
+  font-size: var(--ucla-font-size-small); }
 
 .font-size {
-  font-size: var(--ucla-font-size);
-}
+  font-size: var(--ucla-font-size); }
 
 .font-size-medium {
-  font-size: var(--ucla-font-size-medium);
-}
+  font-size: var(--ucla-font-size-medium); }
 
 .font-size-large {
-  font-size: var(--ucla-font-size-large);
-}
+  font-size: var(--ucla-font-size-large); }
 
 .font-size-x-large {
-  font-size: var(--ucla-font-size-x-large);
-}
+  font-size: var(--ucla-font-size-x-large); }
 
 .font-size-xx-large {
-  font-size: var(--ucla-font-size-xx-large);
-}
+  font-size: var(--ucla-font-size-xx-large); }
 
 .font-size-display {
-  font-size: var(--ucla-font-size-display);
-}
+  font-size: var(--ucla-font-size-display); }
 
 /* =====================================================
    Heading content semantics
@@ -252,44 +213,71 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--ucla-font-weight-bold);
-}
+  font-weight: var(--ucla-font-weight-bold); }
 
 h1,
 .h1 {
   font-size: var(--ucla-font-size-display);
-  line-height: var(--ucla-line-height);
-}
+  line-height: var(--ucla-line-height); }
 
 h2,
 .h2 {
   font-size: var(--ucla-font-size-x-large);
-  line-height: var(--ucla-line-height-display);
-}
+  line-height: var(--ucla-line-height-display); }
 
 h3,
 .h3 {
   font-size: var(--ucla-font-size-large);
-  line-height: var(--ucla-line-height-display);
-}
+  line-height: var(--ucla-line-height-display); }
 
 h4,
 .h4 {
-  font-size: var(--ucla-font-size-medium);
-}
+  font-size: var(--ucla-font-size-medium); }
 
 h5,
 .h5 {
   font-size: var(--ucla-font-size);
-  line-height: var(--ucla-line-height-text);
-}
+  line-height: var(--ucla-line-height-text); }
 
 h6,
 .h6 {
   font-size: var(--ucla-font-size-small);
-  line-height: var(--ucla-line-height-text);
-}
+  line-height: var(--ucla-line-height-text); }
 
+/* =====================================================
+   Lists semantics
+   w3c.github.io/html/textlevel-semantics.html
+   =====================================================
+*/
+ul,
+ol {
+  line-height: var(--ucla-line-height-text); }
+
+/* =====================================================
+   Paragraphs semantics
+   w3c.github.io/html/textlevel-semantics.html
+   ===================================================== */
+p {
+  line-height: var(--ucla-line-height-text); }
+
+.standfirst,
+.leadline {
+  font-size: var(--ucla-font-size-large);
+  line-height: var(--ucla-line-height-alt); }
+
+small,
+.small,
+.legal {
+  font-size: var(--ucla-font-size-x-small); }
+
+code {
+  font-family: var(--ucla-font-family-code); }
+
+/* =====================================================
+   Quotes
+   w3c.github.io/html/textlevel-semantics.html
+   =====================================================
+*/
 /* Use the .stat-tout class for VERTICAL stat touts
   Example HTML structure (from Facts & Figures):
   <div class="stat-wrapper clearfix">
@@ -324,77 +312,55 @@ h6,
 .ucla-c-stat-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2vw;
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  border-left: var(--ucla-border-thick-gold);
-  font-weight: var(--ucla-font-weight-bold);
-  line-height: var(--ucla-line-height-text);
-  margin-bottom: var(--ucla-spacing-xx-large);
-}
-
-@media screen and (min-width: 48em) {
+  grid-gap: 2vw; }
   .ucla-c-stat-wrapper .ucla-c-stat-tout {
-    margin-bottom: var(--ucla-spacing-x-large);
-  }
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout__number, .ucla-c-stat-wrapper .ucla-c-stat-tout__label {
-  margin-left: var(--ucla-spacing-x-large);
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout__number {
-  font-size: var(--ucla-font-size-xxx-display);
-  color: #333;
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout__label {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  font-size: var(--ucla-font-size-medium);
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout--wide {
-  width: 100%;
-  border-bottom: var(--ucla-border-thick-gold);
-  padding-bottom: var(--ucla-spacing-medium);
-  margin-bottom: var(--ucla-spacing-x-large);
-}
-
-.ucla-c-stat-wrapper .ucla-c-stat-tout__link {
-  text-align: right;
-}
-
-.ucla-c-stat-wrapper .ucla-c-arrow-forward {
-  margin-top: var(--ucla-spacing);
-  padding: var(--ucla-spacing-x-small);
-  border: var(--ucla-border);
-  fill: #2774ae;
-}
-
-.ucla-c-stat-wrapper .ucla-arrow-forward:hover,
-.ucla-c-stat-wrapper .ucla-arrow-forward:focus {
-  background-color: #2774ae;
-  fill: #fff;
-}
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    border-left: var(--border-width-thick) solid #ffd100;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-text);
+    margin-bottom: var(--spacing-xx-large); }
+    @media screen and (min-width: 48em) {
+      .ucla-c-stat-wrapper .ucla-c-stat-tout {
+        margin-bottom: var(--spacing-x-large); } }
+    .ucla-c-stat-wrapper .ucla-c-stat-tout__number, .ucla-c-stat-wrapper .ucla-c-stat-tout__label {
+      margin-left: var(--spacing-x-large); }
+    .ucla-c-stat-wrapper .ucla-c-stat-tout__number {
+      font-size: var(--font-size-xxx-display);
+      color: #333; }
+    .ucla-c-stat-wrapper .ucla-c-stat-tout__label {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      font-size: var(--font-size-medium); }
+    .ucla-c-stat-wrapper .ucla-c-stat-tout--wide {
+      width: 100%;
+      border-bottom: 4px solid #ffd100;
+      padding-bottom: 24px;
+      margin-bottom: 48px; }
+  .ucla-c-stat-wrapper .ucla-c-stat-tout__link {
+    text-align: right; }
+  .ucla-c-stat-wrapper .ucla-c-arrow-forward {
+    margin-top: var(--spacing);
+    padding: var(--spacing-x-small);
+    border: 1px solid #2774ae;
+    fill: #2774ae; }
+  .ucla-c-stat-wrapper .ucla-arrow-forward:hover,
+  .ucla-c-stat-wrapper .ucla-arrow-forward:focus {
+    background-color: #2774ae;
+    fill: #fff; }
 
 .tags h2 {
   border-bottom: 1px solid var(--ucla-blue);
-  margin: var(--ucla-spacing) 0;
-}
+  margin: var(--ucla-spacing) 0; }
 
 .tags h3 {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .tags ul {
   display: -webkit-box;
@@ -404,118 +370,87 @@ h6,
           flex-direction: row;
   flex-wrap: wrap;
   -webkit-box-pack: start;
-          justify-content: flex-start;
-}
+          justify-content: flex-start; }
 
 .tags li {
-  margin: var(--ucla-spacing-large) var(--ucla-spacing-small);
-}
+  margin: var(--ucla-spacing-large) var(--ucla-spacing-small); }
 
 .tags a {
   background-color: var(--ucla-ucla-darker-blue);
   color: var(--ucla-white);
   padding: var(--ucla-spacing);
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .tags a:hover,
 .tags a:focus {
-  background-color: var(--ucla-blue);
-}
+  background-color: var(--ucla-blue); }
 
-.standfirst,
-.leadline {
-  font-size: var(--ucla-font-size-large);
-  line-height: var(--ucla-line-height-alt);
-}
+body {
+  display: grid;
+  grid-gap: 2vw; }
+
+header {
+  grid-column: 2 / -1;
+  grid-row: 1; }
 
 .typography main {
   display: grid;
   font-family: var(--ucla-font-family);
   grid-gap: 2vw;
-  grid-template-areas: "type-face", "type-scale", "type-sample";
-}
+  grid-template-areas: "type-face", "type-scale", "type-sample"; }
 
 .typography header h1 {
   font-size: var(--ucla-font-size-display);
   font-weight: var(--ucla-font-weight-bold);
-  margin: 0;
-}
+  margin: 0; }
 
 .typography .type-face {
-  grid-area: typeface;
-}
+  grid-area: typeface; }
 
 .typography .type-scale {
-  grid-area: type-scale;
-}
-
-.typography .type-scale dl {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
+  grid-area: type-scale; }
+  .typography .type-scale dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 .typography .type-sample {
   font-size: var(--ucla-font-size-x-large);
-  overflow-wrap: break-word;
-}
-
-.typography .type-sample h2 {
-  font-size: var(--ucla-font-size-xx-large);
-  font-weight: var(--ucla-font-weight-bold);
-}
+  overflow-wrap: break-word; }
+  .typography .type-sample h2 {
+    font-size: var(--ucla-font-size-xx-large);
+    font-weight: var(--ucla-font-weight-bold); }
 
 .typography footer {
   border-top: var(--ucla-border-width-hairline) solid var(--ucla-color-border-separator);
   display: grid;
   grid-gap: 1vw;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: var(--ucla-spacing-medium);
-}
+  margin-top: var(--ucla-spacing-medium); }
 
 .typography .thin {
-  font-weight: var(--ucla-font-weight-thin);
-}
+  font-weight: var(--ucla-font-weight-thin); }
 
 .typography .light {
-  font-weight: var(--ucla-font-weight-light);
-}
+  font-weight: var(--ucla-font-weight-light); }
 
 .typography .regular {
-  font-weight: var(--ucla-font-weight);
-}
+  font-weight: var(--ucla-font-weight); }
 
 .typography .medium {
-  font-weight: var(--ucla-font-weight-medium);
-}
+  font-weight: var(--ucla-font-weight-medium); }
 
 .typography .semi-bold {
-  font-weight: var(--ucla-font-weight-semi-bold);
-}
+  font-weight: var(--ucla-font-weight-semi-bold); }
 
 .typography .bold {
-  font-weight: var(--ucla-font-weight-bold);
-}
+  font-weight: var(--ucla-font-weight-bold); }
 
 .typography .xbold {
-  font-weight: var(--ucla-font-weight-xbold);
-}
+  font-weight: var(--ucla-font-weight-xbold); }
 
 .typography .black {
-  font-weight: var(--ucla-font-weight-black);
-}
+  font-weight: var(--ucla-font-weight-black); }
 
 .typography .italic {
-  font-style: italic;
-}
-
-body {
-  display: grid;
-  grid-gap: 2vw;
-}
-
-header {
-  grid-column: 2 / -1;
-  grid-row: 1;
-}
+  font-style: italic; }
 /*# sourceMappingURL=styles.css.map */
