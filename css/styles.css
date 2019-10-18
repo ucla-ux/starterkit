@@ -375,8 +375,8 @@ h6,
   fill: #2774ae;
 }
 
-.ucla-c-stat-wrapper .ucla-arrow-forward:hover,
-.ucla-c-stat-wrapper .ucla-arrow-forward:focus {
+.ucla-c-stat-wrapper .ucla-c-arrow-forward:hover,
+.ucla-c-stat-wrapper .ucla-c-arrow-forward:focus {
   background-color: #2774ae;
   fill: #fff;
 }
@@ -401,11 +401,10 @@ h6,
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  border-left: var(--ucla-border-thick-gold);
   font-size: var(--ucla-font-size-xxx-display);
-  color: #333;
   font-weight: var(--ucla-font-weight-bold);
-  line-height: var(--ucla-line-height-text);
+  color: #333;
+  border-left: var(--ucla-border-thick-gold);
   padding-left: var(--ucla-spacing-x-large);
   margin-bottom: var(--ucla-spacing-xx-large);
 }
@@ -422,17 +421,19 @@ h6,
 
 .ucla-c-stat-block a {
   text-align: right;
+  display: block;
+  margin-top: var(--ucla-spacing);
 }
 
-.ucla-c-stat-block .ucla-c-arrow-forward {
+.ucla-c-stat-block .ucla-c-arrow-forward-short {
   margin-top: var(--ucla-spacing);
   padding: var(--ucla-spacing-x-small);
   border: var(--ucla-border);
   fill: #2774ae;
 }
 
-.ucla-c-stat-block .ucla-arrow-forward:hover,
-.ucla-c-stat-block .ucla-arrow-forward:focus {
+.ucla-c-stat-block .ucla-c-arrow-forward-short:hover,
+.ucla-c-stat-block .ucla-c-arrow-forward-short:focus {
   background-color: #2774ae;
   fill: #fff;
 }

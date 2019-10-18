@@ -77,8 +77,8 @@
     fill: $ucla-blue;
   }
 
-  .ucla-arrow-forward:hover,
-  .ucla-arrow-forward:focus {
+  .ucla-c-arrow-forward:hover,
+  .ucla-c-arrow-forward:focus {
     background-color: $ucla-blue;
     fill: $ucla-white;
   }
@@ -103,11 +103,10 @@
   figure {
     display: flex;
     flex-direction: column;
-    border-left: var(--ucla-border-thick-gold);
     font-size: var(--ucla-font-size-xxx-display);
-    color: $ucla-black-80;
     font-weight: var(--ucla-font-weight-bold);
-    line-height: var(--ucla-line-height-text);
+    color: $ucla-black-80;
+    border-left: var(--ucla-border-thick-gold);
     padding-left: var(--ucla-spacing-x-large);
     margin-bottom: var(--ucla-spacing-xx-large);
     @media screen and (min-width: $ucla-bp-medium) {
@@ -115,8 +114,6 @@
     }
 
     figcaption {
-      // display: flex;
-      // flex-direction: column;
       font-size: var(--ucla-font-size-medium);
     }
 
@@ -124,17 +121,19 @@
 
   a {
     text-align: right;
+    display: block;
+    margin-top: var(--ucla-spacing);
   }
 
-  .ucla-c-arrow-forward {
+  .ucla-c-arrow-forward-short {
     margin-top: var(--ucla-spacing);
     padding: var(--ucla-spacing-x-small);
     border: var(--ucla-border);
-    fill: $ucla-blue;
+    fill: $ucla-blue;    
   }
 
-  .ucla-arrow-forward:hover,
-  .ucla-arrow-forward:focus {
+  .ucla-c-arrow-forward-short:hover,
+  .ucla-c-arrow-forward-short:focus {
     background-color: $ucla-blue;
     fill: $ucla-white;
   }
