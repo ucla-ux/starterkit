@@ -290,31 +290,6 @@ h6,
   line-height: var(--ucla-line-height-text);
 }
 
-/* Use the .stat-tout class for VERTICAL stat touts
-  Example HTML structure (from Facts & Figures):
-  <div class="stat-wrapper clearfix">
-      <div class="stat-tout">
-          <span class="stat-tout__number">31,000</span>
-          <span class="stat-tout__label">Undergraduate Students</span>
-      </div>
-  </div>
-  */
-/* www.ioes.ucla.edu version
-  <div class="ucla-c-stat-wrapper">
-    <figure class="ucla-c-stat-tout">
-        <span class="ucla-c-stat-tout__number">31,000</span>
-        <figcaption class="ucla-c-stat-tout__label">Undergraduate Students</figcaption>
-  </figure>
-  </div>
-
-  <div class="ucla-c-stat-wrapper">
-    <p class="ucla-c-stat-tout">
-        <span class="ucla-c-stat-tout__number">31,000</span>
-        <span class="ucla-c-stat-tout__label">Undergraduate Students</span>
-    </p>
-  </div>
-
-  */
 .ucla-c-stat-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -381,14 +356,6 @@ h6,
   fill: #fff;
 }
 
-/* example 2
-<div class="ucla-c-stat-wrapper ucla-c-stat-tout">
-	<figure>
-	  31,000
-	  <figcaption>Undergraduate Students</figcaption>
-	</figure>
-</div>
-*/
 .ucla-c-stat-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
