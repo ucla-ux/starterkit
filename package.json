@@ -1,6 +1,19 @@
 {
   "name": "ucla-starter-kit",
-  "version": "0.1.2",
+  "version": "1.0.0",
+  "author": "Scott Gruber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ucla-ux/starterkit"
+  },
+  "bugs": {
+    "url": "https://github.com/ucla-ux/starterkit/issues"
+  },
+  "homepage": "https://ucla-ux.github.io/starterkit/",
   "dependencies": {},
   "devDependencies": {
     "stylelint": "^11.0.0",
