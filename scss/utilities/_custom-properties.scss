@@ -1,7 +1,4 @@
 :root {
-  /* Add UCLA name space to all CSS properties
-   UCLA Brand Colors
-  // ========================================== */
   --ucla-gold: #ffd100;
   --ucla-blue: #2774ae;
   --ucla-lightest-blue: #daebfe;
@@ -28,14 +25,11 @@
   --ucla-black-10: #e6e6e6;
   --ucla-white: #fff;
 
-  /* Typography
-  // ========================================== */
   --ucla-font-family: Helvetica, Arial, sans-serif;
   --ucla-font-family-display: --ucla-font-family;
   --ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
-  /* Font Weights */
   --ucla-font-weight-thin: 200;
   --ucla-font-weight-light: 300;
   --ucla-font-weight: 400;
@@ -45,8 +39,8 @@
   --ucla-font-weight-xbold: 800;
   --ucla-font-weight-black: 900;
 
-  /* Type scale */
-  --ucla-text-scale-ratio: 1.125; /* major second */
+  // Type scale major second 
+  --ucla-text-scale-ratio: 1.125; 
 
   --ucla-font-size-xxxx-display: 4.624rem; //73px
   --ucla-font-size-xxx-display: 4.11rem; //65px
@@ -63,24 +57,24 @@
   --ucla-font-size-small: 0.889rem; // 14px
   --ucla-font-size-x-small: 0.79rem; // 12px
 
-  /* Strat comm defaults. px */
-  --ucla-stratcomm-font-size-display: 4.5rem; //54px
-  --ucla-stratcomm-font-size-xx-large: 3rem; //48px
-  --ucla-stratcomm-font-size-x-large: 2.25rem; //36px
-  --ucla-stratcomm-font-size-large: 1.5rem; //24px
-  --ucla-stratcomm-font-size-medium: 1.125rem; //20px
-  --ucla-stratcomm-font-size: 1rem; //16px
-  --ucla-stratcomm-font-size-small: .8rem; //12.8px
-  --ucla-stratcomm-font-size-x-small: .75rem; //12px
+  // Strat comm defaults. px 
+  // --ucla-stratcomm-font-size-display: 4.5rem; //54px
+  // --ucla-stratcomm-font-size-xx-large: 3rem; //48px
+  // --ucla-stratcomm-font-size-x-large: 2.25rem; //36px
+  // --ucla-stratcomm-font-size-large: 1.5rem; //24px
+  // --ucla-stratcomm-font-size-medium: 1.125rem; //20px
+  // --ucla-stratcomm-font-size: 1rem; //16px
+  // --ucla-stratcomm-font-size-small: .8rem; //12.8px
+  // --ucla-stratcomm-font-size-x-small: .75rem; //12px
 
-  /* Line height */
+  // Line height 
   --ucla-line-height-text: 1.5; //150%
   --ucla-line-height-display: 1.125; //112.5%
   --ucla-line-height-alt: 1.25; //125%
   --ucla-line-height: 1;
 
-  /* Border radii
- // ========================================== */
+
+ // Border radii
 
   --ucla-border-radius-x-small: .25rem;
   --ucla-border-radius-small: .5rem;
@@ -88,21 +82,15 @@
   --ucla-border-radius-large: 1rem;
   --ucla-border-radius-circle: 50%;
 
-  /* Border widths
-// ========================================== */
+// Border widths
 
   --ucla-border-width-hairline: 1px;
   --ucla-border-width-thin: 2px;
   --ucla-border-width-thick: 4px;
-  --ucla-border:
-    var(--ucla-border-width-hairline) solid
-    var(--ucla-blue);
-  --ucla-border-thick-gold:
-    var(--ucla-border-width-thick) solid
-    var(--ucla-gold);  
+  --ucla-border: var(--ucla-border-width-hairline) solid var(--ucla-blue);
+  --ucla-border-thick-gold: var(--ucla-border-width-thick) solid var(--ucla-gold);  
 
-  /* Spacing
-// ========================================== */
+// Spacing
 
   --ucla-max-width: 90rem;
   --ucla-min-width: 60rem;
@@ -115,9 +103,7 @@
   --ucla-spacing-x-large: 2rem;
   --ucla-spacing-xx-large: 3rem;
 
-  /* Breakpoints relative to 16px base font
-// ========================================== */
-
+// Breakpoints relative to 16px base font
   --ucla-bp-x-small: 18.75em; //300px
   --ucla-bp-small: 30em; //480px
   --ucla-bp-medium: 48em; // 768px;

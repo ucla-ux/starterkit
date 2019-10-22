@@ -1,7 +1,7 @@
-/* =====================================================
-   Heading content semantics
-   w3c.github.io/html/dom.html#heading-content
-   ===================================================== */
+// =====================================================
+//   Heading content semantics
+//   w3c.github.io/html/dom.html#heading-content
+//   ===================================================== */
 
 h1,
 h2,
@@ -38,11 +38,9 @@ h4,
 h5,
 .h5 {
   font-size: var(--ucla-font-size);
-  line-height: var(--ucla-line-height-text);
 }
 
 h6,
 .h6 {
   font-size: var(--ucla-font-size-small);
-  line-height: var(--ucla-line-height-text);
 }

@@ -1,14 +1,10 @@
-/* Add ucla- name space to all CSS properties to avoid clashes
-
 // ========================================== */
-/* Typography
+// SCSS Variables. 
 // ========================================== */
 $ucla-font-family: Helvetica, Arial, sans-serif;
 $ucla-font-family-display: $ucla-font-family;
-$ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
-  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-$ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono",
-  "Lucida Console", monospace;
+$ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
 // Font Weights //
 $ucla-font-weight-thin: 100;
@@ -20,33 +16,22 @@ $ucla-font-weight-bold: 700;
 $ucla-font-weight-xbold: 800;
 $ucla-font-weight-black: 900;
 
-/* Type scale */
-$ucla-text-scale-ratio: 1.125; /* major second */
+// Type scale 
+$ucla-text-scale-ratio: 1.125; // major second 
 
-/* Very large sizes */
 $ucla-font-size-display: 4.5rem; //54px
-
-/* Large sizes */
 $ucla-font-size-xx-large: 3rem; //48px
 $ucla-font-size-x-large: 2.25rem; //36px
 $ucla-font-size-large: 1.5rem; //24px
-
-/* Regular sizes */
 $ucla-font-size-medium: 1.125rem; //20px
 $ucla-font-size: 1rem; //16px
-
-/* Small sizes */
 $ucla-font-size-small: .8rem; //12.8px
 $ucla-font-size-x-small: .75rem; //12px
 
-/* Line height */
 $ucla-line-height-text: 1.5; //150%
 $ucla-line-height-display: 1.125; //112.5%
 $ucla-line-height-alt: 1.25; //125%
 $ucla-line-height-text: 1;
-
-/* Border radii
-// ========================================== */
 
 $ucla-border-radius-x-small: .25rem;
 $ucla-border-radius-small: .5rem;
@@ -54,15 +39,10 @@ $ucla-border-radius-medium: .75rem;
 $ucla-border-radius-large: 1rem;
 $ucla-border-radius-circle: 50%;
 
-/* Border widths
-// ========================================== */
-
 $ucla-border-width-hairline: 1px;
 $ucla-border-width-thin: 2px;
 $ucla-border-width-thick: 5px;
 
-/* Spacing
-// ========================================== */
 
 $ucla-max-width: 90rem;
 $ucla-spacing-x-small: .25rem;

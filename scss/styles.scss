@@ -6,19 +6,18 @@
 @import "utilities/variables"; // sass variables
 
 // BASE STYLES
+@import "base/sections";
+@import "base/type-headings";
+@import "base/type";
+@import "base/grouping";
 @import "base/embedded";
 @import "base/forms";
-@import "base/grouping";
-@import "base/print";
-@import "base/sections";
 @import "base/tables";
-@import "base/type";
-@import "base/type-headings";
+@import "base/print";
 
 // COMPONENTS
-@import "components/stats";
-@import "components/tags";
 @import "components/typography";
+@import "components/stats";
 
 // LAYOUTS
 @import "layouts/grids";

@@ -4,15 +4,10 @@
 // ======================================================
 // body, header, nav, main, aside, footer, article, section
 
-html {
-  border-top: 25px solid var(--ucla-blue);
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,6 +17,9 @@ body {
   line-height: var(--ucla-line-height-text);
   margin: var(--ucla-spacing-x-large);
   max-width: var(--ucla-max-width);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 main,
@@ -29,6 +27,7 @@ header,
 footer,
 aside {}
 
-article {
-  max-width: var(--ucla-min-width);
+// Natural flow and rhythm in articles by default 
+article > * + * {
+  margin-top: 1em;
 }

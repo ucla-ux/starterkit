@@ -5,20 +5,27 @@
 // p, address, hr, pre, blockquote, ol, ul, li, dl, dt, dd,
 // figure, figcaption, div
 
-p {
-  line-height: var(--ucla-line-height-text);
-}
 
 hr {
-  color: var(--ucla-black-10);
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--ucla-black-10);;
+  margin: 1em 0;
+  padding: 0;
 }
 
-ul,
-ol {
-  line-height: var(--ucla-line-height-text);
+// Remove list styles on ul, ol elements with a class attribute 
+ul[class],
+ol[class] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-figure {
+
+figure, 
+figcaption {
   margin: 0;
   padding: 0;
 }
