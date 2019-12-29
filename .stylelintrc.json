@@ -1,6 +1,6 @@
 {
 	"extends": [
-		"stylelint-config-recommended",
+		"stylelint-config-recommended"
 	],	
   "plugins": [
 		"stylelint-a11y",

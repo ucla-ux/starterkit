@@ -1,0 +1,13 @@
+//  =====================================================
+//  HTML Living Standard
+//  Forms
+//  https://html.spec.whatwg.org/multipage/forms.html
+//  Elements: form, label, input, button, select, datalist, optgroup, option, textarea, output, progress, meter, fieldset, legend
+//  =====================================================
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
