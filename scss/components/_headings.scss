@@ -1,0 +1,41 @@
+//------------------------------------
+//  Headings
+//------------------------------------
+
+// Page title
+.page-title {
+  text-transform: uppercase;
+}
+
+// Standard Heading
+.heading {
+  @include heading-default();
+}
+
+.heading--primary {
+  @include heading--primary();
+}
+
+.heading--secondary {
+  @include heading--secondary();
+}
+
+.heading--bar {
+  @include heading--bar();
+}
+
+.heading--highlight {
+  @include heading--highlight();
+}
+
+.heading--invert {
+  @include heading--invert();
+}
+
+.heading--ribbon-branding {
+  @include heading--ribbon-branding();
+}
+
+.heading--ribbon-highlight {
+  @include heading--ribbon-highlight();
+}

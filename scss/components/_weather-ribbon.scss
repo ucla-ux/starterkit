@@ -1,0 +1,71 @@
+/*******
+The weather is received through UCLA atmos. This is only suggested markup to match the gateway usage.
+
+URL for datapoints: https://weather.atmos.ucla.edu/scripts/wx.php'
+
+<div class="weather-ribbon">
+	<div class="weather-ribbon__wrap clearfix">
+			<span id="weather" class="weather-ribbon__text"></span>
+  </div>
+</div>
+*******/
+
+.weather-ribbon {
+  display: block;
+  height: 8px;
+  width: 100%;
+  background-color: $ucla-blue;
+ padding-top: 8px;
+ 
+
+  @media only screen and (min-width: breakpoint-min(md)) {
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media only screen and (min-width: breakpoint-min(xl)) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  &__wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: none;
+
+    @media only screen and (min-width: breakpoint-min(md)) {
+      display: block;
+    }
+  }
+
+
+  &__text {
+    color: $white;
+
+    a {
+      text-decoration: none;
+
+      img {
+        height: 24px;
+        width: auto;
+      }
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      color: $white;
+      display: inline;
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      padding: 0 0 0 8px;
+      position: relative;
+      top: -8px;
+    }
+  }
+}

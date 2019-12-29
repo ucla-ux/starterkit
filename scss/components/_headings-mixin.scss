@@ -1,0 +1,108 @@
+//------------------------------------
+//  Heading Mixins
+//------------------------------------
+
+// Mixins for all heading styles
+
+// Defaults for all Headings
+@mixin heading-default() {
+  margin-top: 0;
+  margin-bottom: $spacer;
+  padding: 0;
+  color: $font-color;
+  font-style: normal;
+  font-weight: $font-weight--bold;
+  line-height: $line-height--tiny;
+}
+
+// Primary Heading - Used for H2 tag.
+@mixin heading--primary() {
+  @include heading-default();
+  font-size: 1.5rem;
+
+  @include breakpoint($bp-narrow--up) {
+    font-size: 1.7778rem;
+  }
+
+  @include breakpoint($bp-medium--up) {
+    font-size: 1.7143rem;
+  }
+}
+
+// Secondary Heading - Used for H3 tag.
+@mixin heading--secondary() {
+  @include heading-default();
+  font-size: 1.3125rem;
+
+  @include breakpoint($bp-narrow--up) {
+    font-size: 1.3333rem;
+  }
+}
+
+// Heading Bar
+@mixin heading--bar() {
+  @include heading-default();
+  padding-left: .75rem;
+  border-left: .375rem solid $brand--secondary;
+}
+
+// Highlight Heading
+@mixin heading--highlight() {
+  @include heading-default();
+  color: $brand--primary;
+}
+
+// Inverted Headers (for on a dark background)
+@mixin heading--invert() {
+  @include heading-default();
+  color: $white;
+}
+
+// Inverted Headers (for on a dark background)
+@mixin heading--ribbon() {
+  $heading--ribbon-offset: $spacer--small * 1.5;
+
+  @include heading-default();
+  margin-left: $heading--ribbon-offset;
+
+  // For modern browsers.
+  @supports (box-decoration-break: clone) {
+    margin-left: 0;
+  }
+
+  span {
+    padding: .25em;
+    display: inline-block;
+    margin-bottom: .2rem;
+    margin-left: -$heading--ribbon-offset;
+    background-color: $brand--primary;
+
+    // For modern browsers.
+    @supports (box-decoration-break: clone) {
+      display: inline;
+      margin-left: 0;
+      line-height: 1.8;
+      box-decoration-break: clone;
+      word-break: break-word;
+    }
+  }
+}
+
+// Branding Ribbon
+@mixin heading--ribbon-branding() {
+  @include heading--ribbon();
+
+  span {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+// Highlight Ribbon
+@mixin heading--ribbon-highlight() {
+  @include heading--ribbon();
+
+  span {
+    background-color: $brand--secondary;
+  }
+}

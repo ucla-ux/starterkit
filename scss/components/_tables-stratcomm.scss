@@ -1,0 +1,238 @@
+// =====================================================
+//   Tablular data
+//   w3c.github.io/html/tabular-data.html
+// =====================================================
+
+/*******
+FIXED FIRST ROW Table component
+TABLE RULES:
+1. To align text right add class "fixed-table__text-right" to td element.
+2. NUMBERS MUST be aligned right using class="fixed-table__text-right".
+3. Total or distinctive columns at bottom should be wrapped in <tfoot> tags.
+HTML structure:
+<div class="fixed-table">
+  <div class="fixed-table__scroller">
+      <table class="fixed-table__wrapper">
+          <thead>
+              <tr>
+                <th class="fixed-table__sticky-col">Column One Title</th>
+                <th>Column Two Title</th>
+                <th>Column Three Title</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="fixed-table__sticky-col">First Row Title</td>
+                <td class="fixed-table__text-right">First row second column info. Text right example.</td>
+                <td>First row third column info.</td>
+              </tr>
+              <tr>
+                <td class="fixed-table__sticky-col">Second Row Bold Title Example</td>
+                <td>Second row second column info.</td>
+                <td>Second row third column info.</td>
+              </tr>
+              <tr class="blue-total">
+                <td class="fixed-table__sticky-col">Third Row Title</td>
+                <td>Third row second column info.</td>
+                <td>Third row third column info.</td>
+              </tr>
+              <tfoot>
+                <tr class="yellow-total">
+                  <td  class="fixed-table__sticky-col">Total Example</td>
+                  <td class="fixed-table__text-right">99,999</td>
+                  <td class="fixed-table__text-right">99,999</td>
+                </tr>
+              </tfoot>
+          </tbody>
+      </table>
+  </div>
+</div>
+Responsive Table JSFiddle: https://jsfiddle.net/zinoui/BmLpV/
+*******/
+.fixed-table {
+  position: relative;
+  width: 100%;
+
+  &__scroller {
+    margin-left: 40%; /* If you change this line you must also change the nested class ".fixed-table__sticy-col" width to match. */
+    overflow-x: auto;
+    overflow-y: visible;
+    padding-bottom: 5px;
+    @media (min-width: breakpoint-min(md)) {
+      overflow-x: visible;
+      margin-left: 0;
+    }
+  }
+
+  &__wrapper {
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+
+    thead {
+      th {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $medium-grey4;
+        padding: 12px 16px 8px;
+        word-wrap: break-word;
+        text-align: left;
+        &.align-right {
+          text-align: right;
+        }
+      }
+    }
+
+    @-moz-document url-prefix() {
+      .fixed-table__sticky-col {
+        margin-top: -24px;
+        @media (min-width: breakpoint-min(md)) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    tbody {
+      & > tr:nth-child(odd),
+      & > tr:nth-child(odd) td:nth-child(1) {
+        background-color: $lightest-grey-2;
+      }
+      & > tr:nth-child(even),
+      & > tr:nth-child(even) td:nth-child(1) {
+        background-color: $white;
+      }
+      & > tr.blue-total,
+      & > tr.blue-total td:nth-child(1) {
+        background-color: $lightest-blue;
+        font-weight: bold;
+      }
+      & > tr.yellow-total,
+      & > tr.yellow-total td:nth-child(1) {
+        background-color: $ucla-gold;
+        font-weight: bold;
+        & > td {
+          border: none;
+        }
+      }
+
+      td {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        color: $grey-80;
+        padding: 12px 16px 8px;
+        word-wrap: break-word;
+      }
+    }
+
+    tfoot {
+      & > tr.blue-total,
+      & > tr.blue-total td:nth-child(1) {
+        background-color: $lightest-blue;
+        font-weight: bold;
+      }
+      & > tr.yellow-total,
+      & > tr.yellow-total td:nth-child(1) {
+        background-color: $ucla-gold;
+        font-weight: bold;
+        & > td {
+          border: none;
+        }
+      }
+
+      td {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        color: $grey-80;
+        padding: 12px 16px 8px;
+        word-wrap: break-word;
+      }
+    }
+  }
+  //Sorting tables can be found on the faculty Awards pages /about/awards-and-honors/faculty/
+  #sortTable {
+    opacity: 0;
+    filter: alpha(opacity=0);
+
+    tr th:nth-child(1) {
+      position: absolute;
+      @media (min-width: breakpoint-min(md)) {
+        position: relative;
+      }
+    }
+
+    tr td:nth-child(1) {
+      position: absolute;
+      font-weight: normal;
+      @media (min-width: breakpoint-min(md)) {
+        width: 34%;
+      }
+    }
+
+    tr th:nth-child(1) {
+      width: 34%;
+    }
+
+    th {
+      position: relative;
+      cursor: pointer;
+      padding-left: 32px;
+      &:before,
+      &:after {
+        content: "\25E4";
+        font-size: 6px;
+        color: #9a9a9a;
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 12px;
+        width: 6px;
+        height: 9px;
+        @include transform(rotate(45deg));
+      }
+      &:after {
+        left: 16px;
+        top: 16px;
+        @include transform(rotate(225deg));
+      }
+      &.sorting-asc {
+        &:after {
+          color: $default-state;
+        }
+      }
+      &.sorting-desc {
+        &:before {
+          color: $default-state;
+        }
+      }
+    }
+  }
+  &__sticky-col {
+    left: 0;
+    position: absolute;
+    top: auto;
+    width: 40%; /* If you change this line change you must also change the parent class ".fixed-table__scroller" margin-left to match. */
+    overflow-y: scroll;
+    font-weight: bold;
+    @media (min-width: breakpoint-min(md)) {
+      min-width: 300px;
+      position: relative;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 8px;
+    &-track {
+      box-shadow: inset 0 -1px 0 0 $grey-10, inset 0 1px 0 0 $grey-10;
+      border-radius: 4px;
+    }
+    &-thumb {
+      background: $default-state;
+      border-radius: 4px;
+      &:hover {
+        background: $hover-state;
+      }
+    }
+  }
+}
